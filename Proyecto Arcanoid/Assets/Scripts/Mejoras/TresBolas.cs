@@ -26,10 +26,10 @@ public class TresBolas : MonoBehaviour
             GameObject bola1;
             GameObject bola2;
             bola1 = Instantiate(bolaCopia, ScriptBola.trBola.position + new Vector3(0.5f, 0, 0), ScriptBola.trBola.rotation);
-            bola1.GetComponent<Rigidbody2D>().velocity = bola.GetComponent<Rigidbody2D>().velocity + new Vector2(5f, 0f);
+            bola1.GetComponent<Rigidbody2D>().velocity = bola.GetComponent<Rigidbody2D>().velocity + new Vector2(5f, 5f);
 
             bola2 = Instantiate(bolaCopia, ScriptBola.trBola.position - new Vector3(0.5f, 0, 0), ScriptBola.trBola.rotation);
-            bola2.GetComponent<Rigidbody2D>().velocity = bola.GetComponent<Rigidbody2D>().velocity - new Vector2(10f, 0f);
+            bola2.GetComponent<Rigidbody2D>().velocity = bola.GetComponent<Rigidbody2D>().velocity - new Vector2(10f, 10f);
 
             Destroy(gameObject);
         }

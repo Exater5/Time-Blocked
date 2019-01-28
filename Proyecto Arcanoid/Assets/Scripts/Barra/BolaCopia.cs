@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BolaCopia : MonoBehaviour
 {
-    public GameObject bolaOriginal;
+   /* public GameObject bolaOriginal;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,4 +24,5 @@ public class BolaCopia : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    */
 }
