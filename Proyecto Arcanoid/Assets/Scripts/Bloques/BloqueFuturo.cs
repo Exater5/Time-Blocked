@@ -19,10 +19,10 @@ public class BloqueFuturo : MonoBehaviour
 
         if (vidas <= 0)
         {
-            int numeroFix = (int)numeroAleatorio;
+            int numeroRounded = (int)numeroAleatorio;
             if (numeroAleatorio <= 8)
             {
-                mejora = powerUps[powerUps.Count - numeroFix];
+                mejora = powerUps[powerUps.Count - numeroRounded];
                 Instantiate(mejora, transform.position, transform.rotation);
                 Debug.Log(Mathf.Round(numeroAleatorio));
             }

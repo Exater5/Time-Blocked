@@ -10,7 +10,8 @@ public class ScriptBola : MonoBehaviour
     bool enPartida;
     public static int vidas = 5;
     int puntuacion = 0;
-    public static int numeroBolas = 0;
+    public static int numeroBolas;
+    public GameObject[] bolas;
     //Variables de texto
     public Text textoVidas;
     public Text textoPuntuacion;
@@ -52,13 +53,15 @@ public class ScriptBola : MonoBehaviour
             Time.timeScale = 0f;
             Debug.Log("Game Over");
         }
-        numeroBolas =
-        Debug.Log(numeroBolas);
+        bolas = GameObject.FindGameObjectsWithTag("Bola");
+        numeroBolas = bolas.Length;
+        //Debug.Log(numeroBolas);
     }
     //Para acabar la partida si la bola se sale
     void OnTriggerEnter2D(Collider2D conElQueChocas){
         if (conElQueChocas.CompareTag("Finish"))
 
+            --numeroBolas;
             if(numeroBolas <= 0)
             {
 
