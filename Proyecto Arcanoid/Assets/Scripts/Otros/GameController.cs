@@ -13,11 +13,7 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            animMenu.SetBool("Sales", true);
-            Time.timeScale = 0f;
-        }
+           
         
     }
 
@@ -37,5 +33,10 @@ public class GameController : MonoBehaviour
     public void Salir()
     {
         Application.Quit();
+    }
+    public void Pausa()
+    {
+        animMenu.SetBool("Sales", true);
+        Time.timeScale = 0f;
     }
 }

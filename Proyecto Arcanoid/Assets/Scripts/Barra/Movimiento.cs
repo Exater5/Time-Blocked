@@ -16,6 +16,7 @@ public class Movimiento : MonoBehaviour {
     public bool enP;
     GameObject nuevaBola;
     public static bool respawn = true;
+    int cuentaToques = 0;
     // Use this for initialization
     void Start ()
     {      
@@ -25,6 +26,8 @@ public class Movimiento : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        cuentaToques = Input.touchCount;
+        if(cuentaToques == 2)
         enP = enPartida;
         if (!enPartida)
         {
