@@ -34,4 +34,8 @@ public class GameController : MonoBehaviour
         animMenu.SetBool("Sales", false);
         Time.timeScale = 1f;
     }
+    public void Salir()
+    {
+        Application.Quit();
+    }
 }

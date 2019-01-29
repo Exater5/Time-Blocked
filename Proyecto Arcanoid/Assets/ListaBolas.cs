@@ -9,7 +9,7 @@ public class ListaBolas : MonoBehaviour
     public int numeroBolas;
     public List<GameObject> bolas;
     public static int vidas = 5;
-    public static SpriteRenderer srActualBola;
+
     //Variables de texto
     public Text textoVidas;
     public Text textoPuntuacion;

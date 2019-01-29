@@ -7,7 +7,7 @@ public class Movimiento : MonoBehaviour {
     public static float bordeIzquierdo = -5f;
     public static float bordeDerecho = 5f;
     Vector2 posicionRaton;
-
+    bool lanza = false;
     //Variables Bola
     public static float velocidadSalida = 500f;
     public GameObject bola;
@@ -37,11 +37,12 @@ public class Movimiento : MonoBehaviour {
             nuevaBola.transform.position = transform.position + new Vector3(0, 1, 0);
             Time.timeScale = 0f;
         }
-        if (Input.GetMouseButtonUp(1) &&!enPartida)
+        if (lanza == true &&!enPartida)
         {
             enPartida = true;
             Time.timeScale = 1f;
             rbBola.AddForce(Vector2.up * velocidadSalida);
+            lanza = false;
 
         }
         //Movimiento

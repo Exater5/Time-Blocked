@@ -31,7 +31,7 @@ public class Disparador : MonoBehaviour {
             puntoDisparoDerecho = plataformaFinal.transform.GetChild(0);
             puntoDisparoIzquierdo = plataformaFinal.transform.GetChild(1);
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonUp(1))
         {
 
 
