@@ -21,11 +21,11 @@ public class ReiniciaBola : MonoBehaviour
             ScriptBola.trBola.position = Vector2.MoveTowards(ScriptBola.trBola.position, barra.transform.position + new Vector3(0, 1, 0), 15f * Time.deltaTime);
          }
          
-         if (Input.GetButtonDown("Jump") && activo==true)
+         if (Input.GetMouseButtonUp(1) && activo==true)
          {
              activo = false;
              Time.timeScale = 1f;
-             ScriptBola.rbBola.AddForce(Vector2.up * ScriptBola.velocidadSalida);
+             Movimiento.rbBola.AddForce(Vector2.up * Movimiento.velocidadSalida);
              Destroy(gameObject);
          }
       
@@ -36,7 +36,7 @@ public class ReiniciaBola : MonoBehaviour
         {
             sr.enabled = false;
             barra = col.gameObject;
-            ScriptBola.rbBola.velocity = Vector2.zero;
+            Movimiento.rbBola.velocity = Vector2.zero;
             activo = true;
         }
     }

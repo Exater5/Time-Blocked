@@ -1,15 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ListaBolas : MonoBehaviour
 {
+    //Variables Bolas
     public int numeroBolas;
     public List<GameObject> bolas;
+    public static int vidas = 5;
+    public static SpriteRenderer srActualBola;
+    //Variables de texto
+    public Text textoVidas;
+    public Text textoPuntuacion;
     // Start is called before the first frame update
     void Start()
     {
-        
+        textoVidas.text = vidas.ToString();
     }
 
     // Update is called once per frame
@@ -17,19 +24,20 @@ public class ListaBolas : MonoBehaviour
     {
         bolas = new List<GameObject>(GameObject.FindGameObjectsWithTag("Bola"));
         numeroBolas = bolas.Count;
-    }
-    void OnTriggerEnter2D(Collider2D conElQueChocas)
-    {
-        if (conElQueChocas.CompareTag("Bola"))
-            bolas.Remove(conElQueChocas.gameObject);
+        textoVidas.text = vidas.ToString();
+        
+        if (vidas <= 0)
+        {
+            textoVidas.text = "GAME OVER";
+            textoPuntuacion.text = "GAME OVER";
+            Time.timeScale = 0f;
+            Debug.Log("Game Over");
+        }
         if (numeroBolas <= 0)
         {
-            ScriptBola.enPartida = false; 
-
-
+            Movimiento.enPartida = false;
+            Movimiento.respawn = true;
+            --vidas;
         }
-
-
-
     }
 }

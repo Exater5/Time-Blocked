@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 
 public class AudioController : MonoBehaviour {
-    public AudioMixer mixerMusica;
-    public AudioMixer mixerFx;
+    public AudioMixer mixer;
     public Animator animaBoton;
 
     public bool activada = true;
@@ -28,12 +27,12 @@ public class AudioController : MonoBehaviour {
 
         if(activada == true)
         {
-            mixerMusica.SetFloat("volMusica", 0f);
+            mixer.SetFloat("volMusica", 0f);
         }
 
         else
         {
-            mixerMusica.SetFloat("volMusica", -80f);
+            mixer.SetFloat("volMusica", -80f);
         }
     }
 
@@ -43,11 +42,11 @@ public class AudioController : MonoBehaviour {
 
         if(fxActivada == true)
         {
-            mixerFx.SetFloat("volFx", 0f);
+            mixer.SetFloat("volFx", 0f);
         }
         else
         {
-            mixerFx.SetFloat("volFx", -80f);
+            mixer.SetFloat("volFx", -80f);
         }
     } 
 }

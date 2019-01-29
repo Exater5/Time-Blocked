@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TresBolas : MonoBehaviour
 {
-    public GameObject bolaCopia;
     public GameObject bola;
     SpriteRenderer sr;
     // Start is called before the first frame update
@@ -25,10 +24,10 @@ public class TresBolas : MonoBehaviour
             sr.enabled = false;
             GameObject bola1;
             GameObject bola2;
-            bola1 = Instantiate(bolaCopia, ScriptBola.trBola.position + new Vector3(0.5f, 0, 0), ScriptBola.trBola.rotation);
+            bola1 = Instantiate(bola, ScriptBola.trBola.position + new Vector3(0.5f, 0, 0), ScriptBola.trBola.rotation);
             bola1.GetComponent<Rigidbody2D>().velocity = bola.GetComponent<Rigidbody2D>().velocity + new Vector2(5f, 5f);
 
-            bola2 = Instantiate(bolaCopia, ScriptBola.trBola.position - new Vector3(0.5f, 0, 0), ScriptBola.trBola.rotation);
+            bola2 = Instantiate(bola, ScriptBola.trBola.position - new Vector3(0.5f, 0, 0), ScriptBola.trBola.rotation);
             bola2.GetComponent<Rigidbody2D>().velocity = bola.GetComponent<Rigidbody2D>().velocity - new Vector2(10f, 10f);
 
             Destroy(gameObject);

@@ -17,7 +17,7 @@ public class MaquinaTiempo : MonoBehaviour
     public Sprite spriteFBarra;
 
     //Variables Bola
-    public SpriteRenderer srActualBola;
+   
     public Sprite spritePBola;
     public Sprite spriteFBola;
 
@@ -65,13 +65,13 @@ public class MaquinaTiempo : MonoBehaviour
         if(prehistoria == true)
         {
             srActualBarra.sprite = spritePBarra;
-            srActualBola.sprite = spritePBola;
+            ScriptBola.srActualBola.sprite = spritePBola;
             srActualFondo.sprite = spritePFondo;
         }
         else
         {
             srActualBarra.sprite = spriteFBarra;
-            srActualBola.sprite = spriteFBola;
+            ScriptBola.srActualBola.sprite = spriteFBola;
             srActualFondo.sprite = spritePFondo;
         }
     }

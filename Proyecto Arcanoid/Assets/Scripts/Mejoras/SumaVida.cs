@@ -20,7 +20,7 @@ public class SumaVida : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            ++ScriptBola.vidas; 
+            ++ListaBolas.vidas; 
             sr.enabled = false;
             Destroy(gameObject);
         }
