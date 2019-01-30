@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public Animator animMenu;
+    public Animator animMundos;
+
     // Start is called before the first frame update
     void Start()
     {
+        animMenu = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -17,6 +20,11 @@ public class GameController : MonoBehaviour
         
     }
 
+
+    public void CargaBotonesNiveles()
+    {
+        animMundos.SetTrigger("PulsarBotonInicio");
+    }
     public void CargaNivel()
     {
         SceneManager.LoadScene(1);
