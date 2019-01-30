@@ -451,10 +451,10 @@ MonoBehaviour:
   tiempoFixed: 0
   temporizador: {fileID: 1124416256}
   srActualBarra: {fileID: 1389491475}
-  spritePBarra: {fileID: 21300000, guid: ad6ecb96b0923734a9ef9601bf5c2164, type: 3}
-  spriteFBarra: {fileID: 21300000, guid: a6741061374564043817052ecea6e12c, type: 3}
-  spritePBola: {fileID: 21300000, guid: a4747a231ad7c564da0abcc464182c8a, type: 3}
-  spriteFBola: {fileID: 21300000, guid: 201eec3ac59eea947876cb46e31ce52a, type: 3}
+  spritePBarra: {fileID: 21300000, guid: 54501b68e51134f4f980029c8b72fec0, type: 3}
+  spriteFBarra: {fileID: 21300000, guid: 898baeff3c4819041be0bbccac389ffd, type: 3}
+  spritePBola: {fileID: 21300000, guid: e33a25693d718f649b454609a91eb379, type: 3}
+  spriteFBola: {fileID: 21300000, guid: 0ac5a00ad0520574594129d21da9da0c, type: 3}
   srActualFondo: {fileID: 0}
   spritePFondo: {fileID: 0}
   spriteFFondo: {fileID: 0}
@@ -2369,10 +2369,10 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 5.9248962, y: 0.64}
+    oldSize: {x: 3.59, y: 0.77}
+    newSize: {x: 5.9248962, y: 1.2041696}
     adaptiveTilingThreshold: 0.5
-    drawMode: 2
+    drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
@@ -2422,12 +2422,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a6741061374564043817052ecea6e12c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 898baeff3c4819041be0bbccac389ffd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
-  m_Size: {x: 5.9248962, y: 0.64}
+  m_DrawMode: 1
+  m_Size: {x: 5.9248962, y: 1.2041696}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2441,8 +2441,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389491473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.07, y: -4.6099997, z: -0.0091502}
-  m_LocalScale: {x: 0.4375, y: 0.4, z: 1}
+  m_LocalPosition: {x: 0.07, y: -4.723, z: -0.0091502}
+  m_LocalScale: {x: 0.4375, y: 0.40000004, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -2473,8 +2473,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de48de57956ef014f94fad627a50aadd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spritePrehistoria: {fileID: 0}
-  spriteFuturo: {fileID: 0}
+  spritePrehistoria: {fileID: 21300000, guid: 54501b68e51134f4f980029c8b72fec0, type: 3}
+  spriteFuturo: {fileID: 21300000, guid: 898baeff3c4819041be0bbccac389ffd, type: 3}
 --- !u!1 &1399835645
 GameObject:
   m_ObjectHideFlags: 0
