@@ -63,4 +63,11 @@ public class Movimiento : MonoBehaviour {
     {
         lanza = true;
     }
+    private void OnMouseEnter()
+    {
+        if(Input.touchCount == 2)
+        {
+            lanza = true;
+        }
+    }
 }

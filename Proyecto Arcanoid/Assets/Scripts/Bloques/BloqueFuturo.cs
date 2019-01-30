@@ -7,12 +7,16 @@ public class BloqueFuturo : MonoBehaviour
     public int vidas;
     public GameObject particulas;
     public bool destruible = true;
+    public Sprite sprite1vida;
     float numeroAleatorio;
     public List<GameObject> powerUps;
     GameObject mejora;
+    SpriteRenderer sr;
+
     private void Start()
     {
         numeroAleatorio = Mathf.Round(Random.Range(0f, 20f));
+        sr = GetComponent<SpriteRenderer>();
     }
     void Update()
     {
@@ -46,6 +50,10 @@ public class BloqueFuturo : MonoBehaviour
         if (col.gameObject.CompareTag("Bola") && destruible == true)
         {
             --vidas;
+            if (vidas == 1)
+            {
+                CambiaSprite();
+            }
         }
     }
 
@@ -62,6 +70,14 @@ public class BloqueFuturo : MonoBehaviour
         if (col.gameObject.CompareTag("Bola") && destruible == true)
         {
             --vidas;
+            if (vidas == 1)
+            {
+                CambiaSprite();
+            }
         }
+    }
+    void CambiaSprite()
+    {
+        sr.sprite = sprite1vida;
     }
 }

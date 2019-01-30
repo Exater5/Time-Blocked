@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6946293998427639916}
   - component: {fileID: 6946293998427639915}
   - component: {fileID: 6946293998427639914}
-  - component: {fileID: 6946293998427639917}
+  - component: {fileID: 6141181775185124986}
   m_Layer: 0
-  m_Name: Bloque Futuro
+  m_Name: Bloque Prehistoria Metal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 88fe414d59fb3c94eb81920a550002ff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 06f9ffab7552d4948840c396317bd310, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -94,7 +94,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013758659, y: -0.0027518272}
+  m_Offset: {x: 0.012465954, y: 0.0062328577}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -105,9 +105,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.97571087, y: 0.4253651}
+  m_Size: {x: 0.99901915, y: 0.43306518}
   m_EdgeRadius: 0
---- !u!114 &6946293998427639917
+--- !u!114 &6141181775185124986
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,14 +116,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6946293998427639913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d45b818442eae74b8ccccc787097272, type: 3}
+  m_Script: {fileID: 11500000, guid: fb06cab7c88d5fa45977abf586ce7d09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 1
-  particulas: {fileID: 5968622229787022438, guid: 916e44fd720e88641a89a57bb4370d21,
+  vidas: 2
+  particulas: {fileID: 6910054980290367348, guid: e3f9598288a8cf743b80225381a946fa,
     type: 3}
-  destruible: 1
-  sprite1vida: {fileID: 21300000, guid: 88fe414d59fb3c94eb81920a550002ff, type: 3}
+  destruible: 0
+  sprite1vida: {fileID: 21300000, guid: c06e46578c1810b4cb7612b391ae20dd, type: 3}
   powerUps:
   - {fileID: 6255891459249308583, guid: 813263b90028d294e8972503abe64e81, type: 3}
   - {fileID: 6255891459249308583, guid: 2d5e8954571f9864180661d82cb7215c, type: 3}
