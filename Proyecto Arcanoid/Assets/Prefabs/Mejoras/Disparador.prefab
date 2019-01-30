@@ -144,7 +144,5 @@ MonoBehaviour:
   laser: {fileID: 1770607135915810, guid: bd8eecee93ef00c4894d76abc59be484, type: 3}
   plataformaDisparo: {fileID: 3496029219195701145, guid: c56efe2b5afe1b74e883c144db361654,
     type: 3}
-  duracion: 4
+  duracion: 2
   fuerzaDisparo: 0.1
-  puntoDisparoIzquierdo: {fileID: 0}
-  puntoDisparoDerecho: {fileID: 0}
