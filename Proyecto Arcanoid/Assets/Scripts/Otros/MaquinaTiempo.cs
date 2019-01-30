@@ -22,7 +22,7 @@ public class MaquinaTiempo : MonoBehaviour
     public Sprite spriteFBola;
 
     //Variables fondo
-    public SpriteRenderer srActualFondo;
+    public Image actualFondo;
     public Sprite spritePFondo;
     public Sprite spriteFFondo;
 
@@ -66,13 +66,13 @@ public class MaquinaTiempo : MonoBehaviour
         {
             srActualBarra.sprite = spritePBarra;
             ScriptBola.srActualBola.sprite = spritePBola;
-            srActualFondo.sprite = spritePFondo;
+            actualFondo.sprite = spritePFondo;
         }
         else
         {
             srActualBarra.sprite = spriteFBarra;
             ScriptBola.srActualBola.sprite = spriteFBola;
-            srActualFondo.sprite = spritePFondo;
+            actualFondo.sprite = spriteFFondo;
         }
     }
     void GameOver()

@@ -13,7 +13,6 @@ public class Movimiento : MonoBehaviour {
     public GameObject bola;
     public static Rigidbody2D rbBola;
     public static bool enPartida;
-    public bool enP;
     GameObject nuevaBola;
     public static bool respawn = true;
     int cuentaToques = 0;
@@ -26,9 +25,6 @@ public class Movimiento : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        cuentaToques = Input.touchCount;
-        if(cuentaToques == 2)
-        enP = enPartida;
         if (!enPartida)
         {
             if (respawn == true)
@@ -62,5 +58,9 @@ public class Movimiento : MonoBehaviour {
             transform.position = new Vector2(bordeDerecho, transform.position.y);
         }
 
+    }
+    private void OnMouseDown()
+    {
+        lanza = true;
     }
 }
