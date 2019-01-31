@@ -10,29 +10,29 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animMenu = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-           
-        
+
     }
 
 
-    public void CargaBotonesNiveles()
+    //Funciones Menu de Inicio
+
+    public void BotonInicio()
     {
         animMundos.SetTrigger("PulsarBotonInicio");
     }
-    public void CargaNivel()
+    public void BotonAtras()
     {
-        SceneManager.LoadScene(2);
+        animMundos.SetTrigger("PulsarBotonAtras");
     }
-    public void CargaMenu()
-    {
-        SceneManager.LoadScene(0);
-    }
+
+
+    //Funciones Menu de Pausa
     public void Continuar()
     {
         animMenu.SetBool("Sales", false);
@@ -46,5 +46,28 @@ public class GameController : MonoBehaviour
     {
         animMenu.SetBool("Sales", true);
         Time.timeScale = 0f;
+    }
+
+
+    //Funciones de carga de Escenas
+    public void CargaMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void CargaNivel()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void CargaNivel2()
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void CargaNivel3()
+    {
+        SceneManager.LoadScene(3);
+    }
+    public void CargaNivel4()
+    {
+        SceneManager.LoadScene(4);
     }
 }

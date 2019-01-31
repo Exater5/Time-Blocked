@@ -326,63 +326,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153263849}
   m_CullTransparentMesh: 0
---- !u!1 &177153516
-GameObject:
+--- !u!1001 &158052151
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 177153517}
-  - component: {fileID: 177153518}
-  m_Layer: 0
-  m_Name: Esquina
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &177153517
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177153516}
-  m_LocalRotation: {x: -0, y: -0, z: -0.13901462, w: 0.9902904}
-  m_LocalPosition: {x: -7.14, y: 7.1, z: 0}
-  m_LocalScale: {x: 1, y: 0.25, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2127165780}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15.982}
---- !u!61 &177153518
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177153516}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 22.8}
-  m_EdgeRadius: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6946293998427639913, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_Name
+      value: Bloque Futuro (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.674184
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.7579961
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &196487752
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,7 +426,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &196487754
 MonoBehaviour:
@@ -642,7 +654,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.19504501, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -653,7 +665,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 22.8}
+  m_Size: {x: 1.39009, y: 22.8}
   m_EdgeRadius: 0
 --- !u!1001 &251661283
 PrefabInstance:
@@ -665,7 +677,7 @@ PrefabInstance:
     - target: {fileID: 6946293998427639913, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
         type: 3}
       propertyPath: m_Name
-      value: Bloque Futuro (1)
+      value: Bloque Futuro Metal
       objectReference: {fileID: 0}
     - target: {fileID: 6946293998427639916, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
         type: 3}
@@ -727,6 +739,17 @@ PrefabInstance:
       propertyPath: particulas
       value: 
       objectReference: {fileID: 537780914}
+    - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
+        type: 3}
+      propertyPath: vidas
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
+        type: 3}
+      propertyPath: sprite1vida
+      value: 
+      objectReference: {fileID: 21300000, guid: 88fe414d59fb3c94eb81920a550002ff,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09ba3f176ec1ff499649c7cc5f9a18a, type: 3}
 --- !u!1 &350748348
@@ -757,65 +780,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &370596361
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 370596362}
-  - component: {fileID: 370596363}
-  m_Layer: 0
-  m_Name: Esquina
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &370596362
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 370596361}
-  m_LocalRotation: {x: -0, y: -0, z: 0.14672054, w: 0.989178}
-  m_LocalPosition: {x: 5.56, y: 7.13, z: 0}
-  m_LocalScale: {x: 1, y: 0.3125, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2127165780}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 16.874}
---- !u!61 &370596363
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 370596361}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 22.8}
-  m_EdgeRadius: 0
 --- !u!4 &376561885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6946293998427639916, guid: 2d2a10a893995864680eb6c34b1efdbe,
@@ -1079,7 +1045,7 @@ RectTransform:
   - {fileID: 2126366210}
   - {fileID: 1399835648}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1130,7 +1096,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.24045241, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1141,7 +1107,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 22.8}
+  m_Size: {x: 1.4809048, y: 22.8}
   m_EdgeRadius: 0
 --- !u!1001 &799809060
 PrefabInstance:
@@ -1153,7 +1119,7 @@ PrefabInstance:
     - target: {fileID: 6946293998427639913, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
         type: 3}
       propertyPath: m_Name
-      value: Bloque Futuro (3)
+      value: Bloque Futuro Metal
       objectReference: {fileID: 0}
     - target: {fileID: 6946293998427639916, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
         type: 3}
@@ -1215,6 +1181,17 @@ PrefabInstance:
       propertyPath: particulas
       value: 
       objectReference: {fileID: 537780914}
+    - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
+        type: 3}
+      propertyPath: vidas
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
+        type: 3}
+      propertyPath: sprite1vida
+      value: 
+      objectReference: {fileID: 21300000, guid: 88fe414d59fb3c94eb81920a550002ff,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09ba3f176ec1ff499649c7cc5f9a18a, type: 3}
 --- !u!1001 &873318176
@@ -1519,7 +1496,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1085350714
 BoxCollider2D:
@@ -1573,7 +1550,7 @@ PrefabInstance:
     - target: {fileID: 6946293998427639913, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
         type: 3}
       propertyPath: m_Name
-      value: Bloque Futuro (2)
+      value: Bloque Futuro Metal
       objectReference: {fileID: 0}
     - target: {fileID: 6946293998427639916, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
         type: 3}
@@ -1638,8 +1615,14 @@ PrefabInstance:
     - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
         type: 3}
       propertyPath: vidas
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
+        type: 3}
+      propertyPath: sprite1vida
+      value: 
+      objectReference: {fileID: 21300000, guid: 88fe414d59fb3c94eb81920a550002ff,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09ba3f176ec1ff499649c7cc5f9a18a, type: 3}
 --- !u!1 &1108978327
@@ -1973,6 +1956,75 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 00
+--- !u!1001 &1135732055
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6946293998427639913, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_Name
+      value: Bloque Futuro
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.5169516
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.6413574
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639916, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &1170927516
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,7 +2057,7 @@ Transform:
   - {fileID: 3373038553247049868}
   - {fileID: 1795500981871988485}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1231687493
 GameObject:
@@ -2437,7 +2489,7 @@ Transform:
   m_LocalScale: {x: 0.4375, y: 0.40000004, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1389491477
 MonoBehaviour:
@@ -2615,7 +2667,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1438343434
 PrefabInstance:
@@ -2775,7 +2827,7 @@ PrefabInstance:
     - target: {fileID: 6946293998427639913, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
         type: 3}
       propertyPath: m_Name
-      value: Bloque Futuro (4)
+      value: Bloque Futuro Metal
       objectReference: {fileID: 0}
     - target: {fileID: 6946293998427639916, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
         type: 3}
@@ -2837,6 +2889,17 @@ PrefabInstance:
       propertyPath: particulas
       value: 
       objectReference: {fileID: 537780914}
+    - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
+        type: 3}
+      propertyPath: vidas
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
+        type: 3}
+      propertyPath: sprite1vida
+      value: 
+      objectReference: {fileID: 21300000, guid: 88fe414d59fb3c94eb81920a550002ff,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09ba3f176ec1ff499649c7cc5f9a18a, type: 3}
 --- !u!1 &1549692325
@@ -3103,7 +3166,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.13937965, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3114,7 +3177,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 14}
+  m_Size: {x: 1.2787592, y: 14}
   m_EdgeRadius: 0
 --- !u!1001 &1831432392
 PrefabInstance:
@@ -3166,7 +3229,7 @@ PrefabInstance:
     - target: {fileID: 6255891459249308580, guid: 92e3c12b03ee47f40ab37e1a32d23384,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6255891459249308580, guid: 92e3c12b03ee47f40ab37e1a32d23384,
         type: 3}
@@ -3429,7 +3492,7 @@ Transform:
   - {fileID: 376561885}
   - {fileID: 1653132498}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1871956036
 Animator:
@@ -3478,7 +3541,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1890343250
 GameObject:
@@ -3939,10 +4002,8 @@ Transform:
   - {fileID: 799045630}
   - {fileID: 234520558}
   - {fileID: 1781050160}
-  - {fileID: 370596362}
-  - {fileID: 177153517}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &39459432847306685
 PrefabInstance:
@@ -4218,7 +4279,7 @@ PrefabInstance:
     - target: {fileID: 6946293998427639913, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
         type: 3}
       propertyPath: m_Name
-      value: Bloque Futuro
+      value: Bloque Futuro Metal
       objectReference: {fileID: 0}
     - target: {fileID: 6946293998427639916, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
         type: 3}
@@ -4280,11 +4341,6 @@ PrefabInstance:
       propertyPath: particulas
       value: 
       objectReference: {fileID: 537780914}
-    - target: {fileID: 6946293998427639914, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
-        type: 3}
-      propertyPath: m_AutoTiling
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09ba3f176ec1ff499649c7cc5f9a18a, type: 3}
 --- !u!4 &7693664429228386549 stripped
@@ -4378,6 +4434,11 @@ PrefabInstance:
     - target: {fileID: 7594577012911158624, guid: 916e44fd720e88641a89a57bb4370d21,
         type: 3}
       propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594577012911158624, guid: 916e44fd720e88641a89a57bb4370d21,
+        type: 3}
+      propertyPath: prewarm
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

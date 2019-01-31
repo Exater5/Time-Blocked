@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Movimiento : MonoBehaviour {
     //Variables Movimiento
-    public static float bordeIzquierdo = -5f;
-    public static float bordeDerecho = 5f;
+    public static float bordeIzquierdo = -4.5f;
+    public static float bordeDerecho = 4.5f;
     Vector2 posicionRaton;
     bool lanza = false;
     //Variables Bola
@@ -45,7 +45,7 @@ public class Movimiento : MonoBehaviour {
 
         }
         //Movimiento
-        posicionRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        
         posicionRaton.y = transform.position.y;
         transform.position = posicionRaton;
 
@@ -62,12 +62,23 @@ public class Movimiento : MonoBehaviour {
     private void OnMouseDown()
     {
         lanza = true;
+        if(ReiniciaBola.cogeMejora == true)
+        {
+            ReiniciaBola.lanza = true;
+        }
+       
     }
     private void OnMouseEnter()
     {
         if(Input.touchCount == 2)
         {
             lanza = true;
+
         }
+       
+    }
+    private void OnMouseOver()
+    {
+        posicionRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 }

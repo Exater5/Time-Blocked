@@ -8,11 +8,12 @@ public class ListaBolas : MonoBehaviour
     //Variables Bolas
     public int numeroBolas;
     public List<GameObject> bolas;
-    public static int vidas = 5;
+    public static int vidas = 3;
 
     //Variables de texto
     public Text textoVidas;
-    public Text textoPuntuacion;
+    public Text textoPersiana;
+    public Animator animaPersiana;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +29,10 @@ public class ListaBolas : MonoBehaviour
         
         if (vidas <= 0)
         {
-            textoVidas.text = "GAME OVER";
-            textoPuntuacion.text = "GAME OVER";
+            textoVidas.text = "GAME OVER";          
             Time.timeScale = 0f;
-            Debug.Log("Game Over");
+            textoPersiana.text = "GAME OVER";
+            animaPersiana.SetTrigger("pierdes");
         }
         if (numeroBolas <= 0)
         {

@@ -25,6 +25,8 @@ public class MaquinaTiempo : MonoBehaviour
     public Image actualFondo;
     public Sprite spritePFondo;
     public Sprite spriteFFondo;
+    public Animator animGameOver;
+    public Text textoPersiana;
 
     // Start is called before the first frame update
     void Start()
@@ -79,5 +81,7 @@ public class MaquinaTiempo : MonoBehaviour
     {
         temporizador.text = "Game Over";
         Time.timeScale = 0f;
+        animGameOver.SetTrigger("pierdes");
+        textoPersiana.text = "Game Over";
     }
 }

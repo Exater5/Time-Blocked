@@ -7,6 +7,8 @@ public class ReiniciaBola : MonoBehaviour
     GameObject barra;
     bool activo = false;
     SpriteRenderer sr;
+    public static bool lanza = false;
+    public static bool cogeMejora = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +23,10 @@ public class ReiniciaBola : MonoBehaviour
             ScriptBola.trBola.position = Vector2.MoveTowards(ScriptBola.trBola.position, barra.transform.position + new Vector3(0, 1, 0), 15f * Time.deltaTime);
          }
          
-         if (Input.GetMouseButtonUp(1) && activo==true)
+         if (lanza && activo==true)
          {
              activo = false;
+             lanza = false;
              Time.timeScale = 1f;
              Movimiento.rbBola.AddForce(Vector2.up * Movimiento.velocidadSalida);
              Destroy(gameObject);
@@ -38,6 +41,7 @@ public class ReiniciaBola : MonoBehaviour
             barra = col.gameObject;
             Movimiento.rbBola.velocity = Vector2.zero;
             activo = true;
+            cogeMejora = true;
         }
     }
 }
