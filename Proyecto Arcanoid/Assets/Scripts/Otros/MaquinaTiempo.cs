@@ -31,7 +31,7 @@ public class MaquinaTiempo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      
+
     }
 
     // Update is called once per frame
@@ -57,6 +57,7 @@ public class MaquinaTiempo : MonoBehaviour
         if( tiempoFixed < 0)
         {
             GameOver();
+
         }
     }
     public void ViajeTemporal()
@@ -83,5 +84,6 @@ public class MaquinaTiempo : MonoBehaviour
         Time.timeScale = 0f;
         animGameOver.SetTrigger("pierdes");
         textoPersiana.text = "Game Over";
+        prehistoria = false;
     }
 }

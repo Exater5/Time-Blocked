@@ -4,9 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
-    public Animator animMenu;
+    public Animator animAjustes;
     public Animator animMundos;
     public Animator animFondo;
+    public Animator animPanelPausa;
+    bool activado = false;
+    bool pulso = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,10 +40,18 @@ public class GameController : MonoBehaviour
 
 
     //Funciones Menu de Pausa
-    public void Continuar()
+    public void Ajustes()
     {
-        animMenu.SetBool("Sales", false);
-        Time.timeScale = 1f;
+        activado = !activado;
+        if(activado == true)
+        {
+            animAjustes.SetBool("Sales", true);
+        }
+        else
+        {
+            animAjustes.SetBool("Sales", false);
+        }
+        
     }
     public void Salir()
     {
@@ -48,8 +59,18 @@ public class GameController : MonoBehaviour
     }
     public void Pausa()
     {
-        animMenu.SetBool("Sales", true);
-        Time.timeScale = 0f;
+        pulso = !pulso;
+        if (pulso == true)
+        {
+            animPanelPausa.SetBool("Sales", true);
+            Time.timeScale = 1f;
+        }
+        else
+        {
+            animPanelPausa.SetBool("Sales", false);
+            Time.timeScale = 0f;
+            animAjustes.SetBool("Sales", false);
+        }
     }
 
 

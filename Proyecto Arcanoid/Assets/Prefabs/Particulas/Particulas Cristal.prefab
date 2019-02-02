@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7693664429228386549}
   - component: {fileID: 7594577012911158624}
   - component: {fileID: 8103740994863823684}
-  - component: {fileID: 6223828559507878136}
   m_Layer: 0
   m_Name: Particulas Cristal
   m_TagString: Untagged
@@ -4757,16 +4756,3 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &6223828559507878136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5968622229787022438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f328328c34344e48829c7663a48cda8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tiempoVida: 3
