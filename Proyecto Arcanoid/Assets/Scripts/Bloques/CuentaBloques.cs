@@ -11,6 +11,7 @@ public class CuentaBloques : MonoBehaviour
     public Text contador;
     public Text textoFinal;
     public GameObject todosLosObjetos;
+    public Button botonSigNivel;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,5 +35,6 @@ public class CuentaBloques : MonoBehaviour
         textoFinal.text = ("Bieeen, has tardado " + Mathf.Round(tiempo) + " segundos en superar el mapa");
         animacionGanar.SetTrigger("pierdes");
         Time.timeScale = 0f;
+        botonSigNivel.interactable = true;
     }
 }
