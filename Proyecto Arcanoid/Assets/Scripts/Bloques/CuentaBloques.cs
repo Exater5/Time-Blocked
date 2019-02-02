@@ -10,6 +10,7 @@ public class CuentaBloques : MonoBehaviour
     bool jugando = true;
     public Text contador;
     public Text textoFinal;
+    public GameObject todosLosObjetos;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class CuentaBloques : MonoBehaviour
         {
             TerminaPartida();
             jugando = false;
+            Destroy(todosLosObjetos);
         }
         tiempo = Time.time;
         contador.text = Mathf.Round(tiempo).ToString();

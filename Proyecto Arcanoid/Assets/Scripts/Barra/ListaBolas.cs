@@ -9,6 +9,7 @@ public class ListaBolas : MonoBehaviour
     public int numeroBolas;
     public List<GameObject> bolas;
     public static int vidas = 3;
+    public GameObject todosObjetos;
 
     //Variables de texto
     public Text textoVidas;
@@ -33,6 +34,7 @@ public class ListaBolas : MonoBehaviour
             Time.timeScale = 0f;
             textoPersiana.text = "GAME OVER";
             animaPersiana.SetTrigger("pierdes");
+            Destroy(todosObjetos);
         }
         if (numeroBolas <= 0)
         {
