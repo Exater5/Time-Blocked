@@ -6,7 +6,7 @@ public class GameController : MonoBehaviour
 {
     public Animator animMenu;
     public Animator animMundos;
-
+    public Animator animFondo;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,10 +25,14 @@ public class GameController : MonoBehaviour
     public void BotonInicio()
     {
         animMundos.SetTrigger("PulsarBotonInicio");
+        animFondo.SetTrigger("Mapas");
+        Debug.Log("Boton Inicio");
+
     }
     public void BotonAtras()
     {
         animMundos.SetTrigger("PulsarBotonAtras");
+        animFondo.SetTrigger("Menu");
     }
 
 
