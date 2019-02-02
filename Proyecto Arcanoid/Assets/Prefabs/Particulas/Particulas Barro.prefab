@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1795500981871988485}
   - component: {fileID: 7583385662271829953}
   - component: {fileID: 2094346304388384798}
+  - component: {fileID: 4505217840472744466}
   m_Layer: 0
   m_Name: Particulas Barro
   m_TagString: Untagged
@@ -4756,3 +4757,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &4505217840472744466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7442341063041785303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f328328c34344e48829c7663a48cda8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoVida: 3
