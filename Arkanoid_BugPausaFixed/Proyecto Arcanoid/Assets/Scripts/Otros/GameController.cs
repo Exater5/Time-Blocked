@@ -63,12 +63,12 @@ public class GameController : MonoBehaviour
         if (pulso == true)
         {
             animPanelPausa.SetBool("Sales", true);
-            Time.timeScale = 1f;
+            Time.timeScale = 0f;
         }
         else
         {
             animPanelPausa.SetBool("Sales", false);
-            Time.timeScale = 0f;
+            Time.timeScale = 1f;
             animAjustes.SetBool("Sales", false);
         }
     }
