@@ -68,13 +68,11 @@ public class MaquinaTiempo : MonoBehaviour
         if(prehistoria == true)
         {
             srActualBarra.sprite = spritePBarra;
-            ScriptBola.srActualBola.sprite = spritePBola;
             actualFondo.sprite = spritePFondo;
         }
         else
         {
             srActualBarra.sprite = spriteFBarra;
-            ScriptBola.srActualBola.sprite = spriteFBola;
             actualFondo.sprite = spriteFFondo;
         }
     }

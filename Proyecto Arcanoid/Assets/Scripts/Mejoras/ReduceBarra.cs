@@ -7,6 +7,7 @@ public class ReduceBarra : MonoBehaviour {
     public float magnitud = 0.2f;
     SpriteRenderer sr;
     public float duracion = 10f;
+    int contadorColisiones = 0;
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
