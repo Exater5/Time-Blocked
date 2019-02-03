@@ -23,7 +23,8 @@ public class Escritor : MonoBehaviour
         el texto que hemos añadido desde el editor al componente TextMeshPro*/
         textoMesh.text = ""; /*Ahora le decimos que el texto del textMesh esté vacío para que no salga nada en pantalla y
         para guardar el texto que había antes se lo hemos pasado a la variable textoQueEscribo*/
-        tiempoInicio = Time.time;  //el tiempo de inicio va a ser el tiempo actual del juego, es decir 0, porque acaba de empezar.           
+        tiempoInicio = Time.time;  //el tiempo de inicio va a ser el tiempo actual del juego, es decir 0, porque acaba de empezar. 
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
