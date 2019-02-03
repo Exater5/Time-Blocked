@@ -8,12 +8,16 @@ public class GameController : MonoBehaviour
     public Animator animMundos;
     public Animator animFondo;
     public Animator animPanelPausa;
+    public Animator persiana;
+	public float tiempoAnimacion = 1.5f;
+	public string NumeroNivel = "CargaNivel";
+	public float tiempo;
     bool activado = false;
     bool pulso = false;
     // Start is called before the first frame update
     void Start()
     {
-
+StartCoroutine ("PasarNivel");
     }
 
     // Update is called once per frame
@@ -73,6 +77,29 @@ public class GameController : MonoBehaviour
         }
     }
 
+    //Retraso del cambio de escena y animación persiana.
+
+   
+    
+     void ActivaPersiana()
+    {
+    	//Invoke("Hola", 1);
+    	persiana.SetTrigger("Baja");
+    	StartCoroutine (PasarNivel());
+    	
+    	
+	}
+    public void Hola(){
+    	Debug.Log("hola");
+    }
+    IEnumerator PasarNivel()
+    {
+    	
+    	
+    	yield return new WaitForSeconds(1);
+    	Debug.Log("hola");
+    	
+    }
 
     //Funciones de carga de Escenas
     public void CargaMenu()
