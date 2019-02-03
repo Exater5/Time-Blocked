@@ -645,6 +645,7 @@ MonoBehaviour:
   animGameOver: {fileID: 1022390592}
   textoPersiana: {fileID: 1729510138}
   animacionFondos: {fileID: 1810109573}
+  RelojS2: {fileID: 0}
 --- !u!114 &196487756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -846,7 +847,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 196487754}
-        m_MethodName: CargaNivel2
+        m_MethodName: CargaMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -878,7 +879,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ca0bb13e5868a8b4cbc3f9e29a890193, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e33a25693d718f649b454609a91eb379, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

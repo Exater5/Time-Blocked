@@ -16,7 +16,6 @@ public class BloqueFuturo : MonoBehaviour
     public string sobreProbabilidad = "La probabilidad es entre 8, es decir, el valor 8 es 100% y 80 es 10%";
     [Range(8f, 100f)]
     public float probabilidad;
-
     private void Start()
     {
         numeroAleatorio = Mathf.Round(Random.Range(0f, probabilidad));
@@ -32,7 +31,7 @@ public class BloqueFuturo : MonoBehaviour
             {
                 mejora = powerUps[powerUps.Count - numeroRounded];
                 Instantiate(mejora, transform.position, transform.rotation);
-                Debug.Log(Mathf.Round(numeroAleatorio));
+                Destroy(gameObject);
             }
             Instantiate(particulas, transform.position, transform.rotation);
 

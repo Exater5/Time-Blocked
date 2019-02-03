@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6946293998427639917}
   m_Layer: 0
   m_Name: Bloque Futuro Metal
-  m_TagString: Untagged
+  m_TagString: Bloque
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,7 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidas: 2
-  particulas: {fileID: 0}
+  particulas: {fileID: 5968622229787022438, guid: 916e44fd720e88641a89a57bb4370d21,
+    type: 3}
   destruible: 1
   sprite1vida: {fileID: 21300000, guid: 88fe414d59fb3c94eb81920a550002ff, type: 3}
   powerUps:
