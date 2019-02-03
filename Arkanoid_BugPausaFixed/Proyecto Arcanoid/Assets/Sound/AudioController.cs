@@ -15,8 +15,24 @@ public class AudioController : MonoBehaviour {
     public bool activada = true;
     public bool fxActivada = true;
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+    {
+        if (activada == true)
+        {
+            imagenMusica.sprite = spriteMusicaActivada;
+        }
+        else
+        {
+            imagenMusica.sprite = spriteMusicaDesactivada;
+        }
+        if (fxActivada == true)
+        {
+            imagenFx.sprite = spriteFxActivada;
+        }
+        else
+        {
+            imagenFx.sprite = spriteFxDesactivada;
+        }
 	}
 	
 	// Update is called once per frame
