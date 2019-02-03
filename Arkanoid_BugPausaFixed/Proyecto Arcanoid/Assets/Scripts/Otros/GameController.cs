@@ -119,4 +119,8 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(5);
         ListaBolas.vidas = 3;
     }
+    public void CargaCreditos()
+    {
+        SceneManager.LoadScene(6);
+    }
 }
