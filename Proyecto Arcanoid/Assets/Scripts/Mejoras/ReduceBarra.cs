@@ -16,12 +16,17 @@ public class ReduceBarra : MonoBehaviour {
     {
         if (col.gameObject.CompareTag("Player"))
         {
+            ++contadorColisiones;
             jugador = col.gameObject;
-            col.gameObject.transform.localScale -= new Vector3(magnitud, 0, 0);
-            Invoke("Crece", duracion);
-            sr.enabled = false;
-            Movimiento.bordeDerecho = Movimiento.bordeDerecho + 0.7f;
-            Movimiento.bordeIzquierdo = Movimiento.bordeIzquierdo - 0.7f;
+            if(contadorColisiones == 1)
+            {
+                col.gameObject.transform.localScale -= new Vector3(magnitud, 0, 0);
+                Invoke("Crece", duracion);
+                sr.enabled = false;
+                Movimiento.bordeDerecho = Movimiento.bordeDerecho + 0.7f;
+                Movimiento.bordeIzquierdo = Movimiento.bordeIzquierdo - 0.7f;
+            }
+ 
         }
     }
 
