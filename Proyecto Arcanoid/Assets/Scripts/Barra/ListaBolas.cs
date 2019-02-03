@@ -34,7 +34,7 @@ public class ListaBolas : MonoBehaviour
             Time.timeScale = 0f;
             textoPersiana.text = "GAME OVER";
             animaPersiana.SetTrigger("pierdes");
-            Destroy(todosObjetos);
+            todosObjetos.SetActive(false);
         }
         if (numeroBolas <= 0)
         {

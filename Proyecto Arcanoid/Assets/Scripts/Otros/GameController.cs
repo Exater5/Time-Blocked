@@ -82,17 +82,26 @@ public class GameController : MonoBehaviour
     public void CargaNivel()
     {
         SceneManager.LoadScene(1);
+        ListaBolas.vidas = 3;
     }
     public void CargaNivel2()
     {
         SceneManager.LoadScene(2);
+        ListaBolas.vidas = 3;
     }
     public void CargaNivel3()
     {
         SceneManager.LoadScene(3);
+        ListaBolas.vidas = 3;
     }
     public void CargaNivel4()
     {
         SceneManager.LoadScene(4);
+        ListaBolas.vidas = 3;
+    }
+    public void CargaNivel5()
+    {
+        SceneManager.LoadScene(5);
+        ListaBolas.vidas = 3;
     }
 }

@@ -61,12 +61,15 @@ public class Movimiento : MonoBehaviour {
     }
     private void OnMouseDown()
     {
-        lanza = true;
-        if(ReiniciaBola.cogeMejora == true)
+        if (!enPartida)
+        {
+            lanza = true;
+        }
+        if (ReiniciaBola.cogeMejora == true)
         {
             ReiniciaBola.lanza = true;
         }
-       
+
     }
     private void OnMouseEnter()
     {
