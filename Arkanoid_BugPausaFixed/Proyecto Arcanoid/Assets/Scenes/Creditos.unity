@@ -548,7 +548,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Dise\xF1o Realizado por:\nCarlos Camacho\nCarlos Mart\xEDnez\nJes\xFAs
+  m_text: "Dise\xF1os Realizados por:\nCarlos Camacho\nCarlos Mart\xEDnez\nJes\xFAs
     P\xE9rez\nJavier Canales\n\nProgramaci\xF3n:\nPablo Torcuato Garc\xEDa\n\nAgradecimientos
     especiales a:\nJavier Izquierdo\nPedro \nBraulio Mart\xEDnez\nFamilias y amigos
     abandonados por trabajar en el proyecto y que a\xFAn me quieren.\nEn colaboraci\xF3n
@@ -621,7 +621,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: -832.0972}
   m_textInfo:
     textComponent: {fileID: 1324891834}
-    characterCount: 296
+    characterCount: 298
     spriteCount: 0
     spaceCount: 43
     wordCount: 41
@@ -884,7 +884,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -194, y: -393}
+  m_AnchoredPosition: {x: -177.9, y: -350.2}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1866709318

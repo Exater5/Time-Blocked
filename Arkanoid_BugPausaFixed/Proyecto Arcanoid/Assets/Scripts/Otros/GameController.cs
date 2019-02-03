@@ -80,11 +80,39 @@ public class GameController : MonoBehaviour
 
    
     
-     void ActivaPersiana()
+    public void ActivaPersiana()
     {
 
     	persiana.SetTrigger("Baja");
-        Invoke(nombreNivel, tiempoAnimacion);
+        Invoke("CargaNivel", tiempoAnimacion);
+
+    }
+    public  void ActivaPersiana2()
+    {
+
+    	persiana.SetTrigger("Baja");
+        Invoke("CargaNivel2", tiempoAnimacion);
+
+    }
+    public  void ActivaPersiana3()
+    {
+
+    	persiana.SetTrigger("Baja");
+        Invoke("CargaNivel3", tiempoAnimacion);
+
+    }
+    public  void ActivaPersiana4()
+    {
+
+    	persiana.SetTrigger("Baja");
+        Invoke("CargaNivel4", tiempoAnimacion);
+
+    }
+    public  void ActivaPersiana5()
+    {
+
+    	persiana.SetTrigger("Baja");
+        Invoke("CargaNivel5", tiempoAnimacion);
 
     }
 

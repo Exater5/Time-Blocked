@@ -644,16 +644,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567228375}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 629741273}
-  m_RootOrder: 2
+  m_Father: {fileID: 1997688934}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 287.2}
+  m_AnchoredPosition: {x: -789.99994, y: 326.20004}
   m_SizeDelta: {x: 583.2, y: 498.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &567228377
@@ -917,7 +917,6 @@ RectTransform:
   m_Children:
   - {fileID: 1997688934}
   - {fileID: 1768177433}
-  - {fileID: 567228376}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1036,7 +1035,7 @@ MonoBehaviour:
   animPanelPausa: {fileID: 0}
   persiana: {fileID: 1768177434}
   tiempoAnimacion: 0.5
-  nombreNivel: CargaNivel
+  nombreNivel: CargaNivel2
 --- !u!4 &810895378
 Transform:
   m_ObjectHideFlags: 0
@@ -1152,7 +1151,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 854013358}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 810895377}
+        m_MethodName: ActivaPersiana3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &854013358
@@ -1365,7 +1375,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1533603617}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 810895377}
+        m_MethodName: ActivaPersiana5
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1533603617
@@ -1660,7 +1681,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1761872725}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 810895377}
+        m_MethodName: ActivaPersiana4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1761872725
@@ -2168,6 +2200,7 @@ RectTransform:
   - {fileID: 1916045303}
   - {fileID: 2073516313}
   - {fileID: 109210218}
+  - {fileID: 567228376}
   m_Father: {fileID: 629741273}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2375,7 +2408,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2041534226}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 810895377}
+        m_MethodName: ActivaPersiana2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2041534226
