@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6255891459249308583}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.96, y: 3.903233, z: -0.005859375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -144,5 +144,5 @@ MonoBehaviour:
   laser: {fileID: 1770607135915810, guid: bd8eecee93ef00c4894d76abc59be484, type: 3}
   plataformaDisparo: {fileID: 3496029219195701145, guid: c56efe2b5afe1b74e883c144db361654,
     type: 3}
-  duracion: 2
+  duracion: 3
   fuerzaDisparo: 0.1

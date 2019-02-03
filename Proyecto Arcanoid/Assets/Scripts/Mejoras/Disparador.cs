@@ -14,6 +14,7 @@ public class Disparador : MonoBehaviour {
     Transform puntoDisparoIzquierdo;
     Transform puntoDisparoDerecho;
     bool toca = false;
+    public int contadorColisiones = 0;
 
 	// Use this for initialization
 
@@ -31,19 +32,14 @@ public class Disparador : MonoBehaviour {
             puntoDisparoDerecho = plataformaFinal.transform.GetChild(0);
             puntoDisparoIzquierdo = plataformaFinal.transform.GetChild(1);
         }
-        if (Input.touchCount == 2)
+        if(Input.touchCount == 2)
         {
-
-
-            //Laser
-
             GameObject nuevoLaser;
             nuevoLaser = Instantiate(laser, puntoDisparoIzquierdo.position, puntoDisparoIzquierdo.rotation);
             nuevoLaser.GetComponent<Rigidbody2D>().AddForce(Vector2.up * fuerzaDisparo);
             nuevoLaser = Instantiate(laser, puntoDisparoDerecho.position, puntoDisparoDerecho.rotation);
             nuevoLaser.GetComponent<Rigidbody2D>().AddForce(Vector2.up * fuerzaDisparo);
-
-        }
+        }          
     }
 
     //OnCollision
@@ -52,18 +48,23 @@ public class Disparador : MonoBehaviour {
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            jugador = col.gameObject;
-            plataformaFinal = Instantiate(plataformaDisparo, col.transform.position, col.transform.rotation);
-           
+            ++contadorColisiones;
+            jugador = col.gameObject;    
+            if(contadorColisiones == 1)
+            {
+                plataformaFinal = Instantiate(plataformaDisparo, jugador.transform.position, jugador.transform.rotation);
+            }
+                      
             toca = true;
             sr.enabled = false;
             Invoke("AutoDestruccion", duracion);
         }
     }
 
+ 
     void AutoDestruccion()
     {
-        Destroy(gameObject);
         Destroy(plataformaFinal);
+        Destroy(gameObject);
     }
 }
