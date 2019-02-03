@@ -14,7 +14,7 @@ public class Disparador : MonoBehaviour {
     Transform puntoDisparoIzquierdo;
     Transform puntoDisparoDerecho;
     bool toca = false;
-    public int contadorColisiones = 0;
+    int contadorColisiones = 0;
 
 	// Use this for initialization
 
