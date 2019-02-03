@@ -28,6 +28,7 @@ public class MaquinaTiempo : MonoBehaviour
     public Animator animGameOver;
     public Text textoPersiana;
     public Animator animacionFondos;
+    public Animator RelojS2;
 
     // Start is called before the first frame update
     void Start()
@@ -72,11 +73,13 @@ public class MaquinaTiempo : MonoBehaviour
         {
             srActualBarra.sprite = spritePBarra;
             animacionFondos.SetTrigger("ViajePasado");
+            RelojS2.SetTrigger("ViajeTemporal");
         }
         else
         {
             srActualBarra.sprite = spriteFBarra;
             animacionFondos.SetTrigger("ViajeFuturo");
+            RelojS2.SetTrigger("ViajeTemporal");
         }
     }
     void GameOver()
