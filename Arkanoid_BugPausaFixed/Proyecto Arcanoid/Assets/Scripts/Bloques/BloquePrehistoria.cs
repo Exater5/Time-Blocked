@@ -19,7 +19,7 @@ public class BloquePrehistoria : MonoBehaviour
 
     private void Start()
     {
-        numeroAleatorio = Mathf.Round(Random.Range(0f, probabilidad));
+        numeroAleatorio = Mathf.Round(Random.Range(1f, probabilidad));
         sr = GetComponent<SpriteRenderer>();
     }
 
@@ -30,7 +30,7 @@ public class BloquePrehistoria : MonoBehaviour
             int numeroFix = (int)numeroAleatorio;
             if (numeroAleatorio <= 8)
             {
-                mejora = powerUps[powerUps.Count - numeroFix];
+                mejora = powerUps[powerUps.Count +1 - numeroFix];
                 Instantiate(mejora, transform.position, transform.rotation);
             }
             Instantiate(particulas, transform.position, transform.rotation);

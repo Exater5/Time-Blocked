@@ -19,7 +19,7 @@ public class BloqueFuturo : MonoBehaviour
     public float probabilidad;
     private void Start()
     {
-        numeroAleatorio = Mathf.Round(Random.Range(0f, probabilidad));
+        numeroAleatorio = Mathf.Round(Random.Range(1f, probabilidad));
         sr = GetComponent<SpriteRenderer>();
         sonidoRotura = GetComponent<AudioSource>();
     }
@@ -31,9 +31,11 @@ public class BloqueFuturo : MonoBehaviour
             int numeroRounded = (int)numeroAleatorio;
             if (numeroAleatorio <= 8)
             {
-                mejora = powerUps[powerUps.Count - numeroRounded];
+                Debug.Log(numeroAleatorio);
+                mejora = powerUps[powerUps.Count +1 - numeroRounded];
                 Instantiate(mejora, transform.position, transform.rotation);
                 Destroy(gameObject);
+                
             }
             Instantiate(particulas, transform.position, transform.rotation);
 

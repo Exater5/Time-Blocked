@@ -133,6 +133,7 @@ MonoBehaviour:
   - {fileID: 6255891459249308583, guid: 92e3c12b03ee47f40ab37e1a32d23384, type: 3}
   - {fileID: 3350534895545994193, guid: b6e781de14afee24da428770ae134c1b, type: 3}
   - {fileID: 6255891459249308583, guid: 23d75926fbfc64344a77ecace045cc7e, type: 3}
+  - {fileID: 6255891459249308583, guid: 813263b90028d294e8972503abe64e81, type: 3}
   sobreProbabilidad: La probabilidad es entre 8, es decir, el valor 8 es 100% y 80
     es 10%
   probabilidad: 45
