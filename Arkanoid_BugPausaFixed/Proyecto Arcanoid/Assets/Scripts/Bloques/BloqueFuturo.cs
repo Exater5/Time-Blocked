@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BloqueFuturo : MonoBehaviour
 {
+    AudioSource sonidoRotura;
     public int vidas;
     public GameObject particulas;
     public bool destruible = true;
@@ -20,6 +21,7 @@ public class BloqueFuturo : MonoBehaviour
     {
         numeroAleatorio = Mathf.Round(Random.Range(0f, probabilidad));
         sr = GetComponent<SpriteRenderer>();
+        sonidoRotura = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -34,6 +36,8 @@ public class BloqueFuturo : MonoBehaviour
                 Destroy(gameObject);
             }
             Instantiate(particulas, transform.position, transform.rotation);
+
+            
 
             Destroy(gameObject);
 
@@ -53,6 +57,7 @@ public class BloqueFuturo : MonoBehaviour
         if (col.gameObject.CompareTag("Bola") && destruible == true)
         {
             --vidas;
+
             if (vidas == 1)
             {
                 CambiaSprite();
@@ -73,6 +78,7 @@ public class BloqueFuturo : MonoBehaviour
         if (col.gameObject.CompareTag("Bola") && destruible == true)
         {
             --vidas;
+            sonidoRotura.Play();
             if (vidas == 1)
             {
                 CambiaSprite();

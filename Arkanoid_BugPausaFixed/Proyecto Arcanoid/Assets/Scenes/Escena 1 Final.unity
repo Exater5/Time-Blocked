@@ -2582,8 +2582,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 91.079}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24, y: -70}
-  m_SizeDelta: {x: 40, y: 40}
+  m_AnchoredPosition: {x: 36.6, y: -107.4}
+  m_SizeDelta: {x: 63.93, y: 63.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &956387171
 MonoBehaviour:
@@ -3349,7 +3349,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -313, y: -109}
-  m_SizeDelta: {x: -200, y: -327.8}
+  m_SizeDelta: {x: -129.4, y: -187.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1109069248
 MonoBehaviour:
@@ -3525,7 +3525,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 110, y: 14}
+  m_AnchoredPosition: {x: 92, y: 14}
   m_SizeDelta: {x: 122.55, y: 101.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1124416255
@@ -3557,7 +3557,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 097d2d2224c8c5a4c8ef90793854b29c, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 1
@@ -4436,7 +4436,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 200
   m_Sprite: {fileID: 21300000, guid: 898baeff3c4819041be0bbccac389ffd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.79607844, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -4486,7 +4486,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.09674883, y: 0.105810046}
+  m_Offset: {x: 0.09674883, y: -1.8533552}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4497,7 +4497,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 12.296628, y: 5.6372375}
+  m_Size: {x: 12.296628, y: 9.555567}
   m_EdgeRadius: 0
 --- !u!4 &1391392747 stripped
 Transform:
@@ -5221,8 +5221,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.119}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -24, y: -70}
-  m_SizeDelta: {x: 40, y: 40}
+  m_AnchoredPosition: {x: -36.8, y: -107.8}
+  m_SizeDelta: {x: 63.93, y: 63.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1606216299
 MonoBehaviour:
