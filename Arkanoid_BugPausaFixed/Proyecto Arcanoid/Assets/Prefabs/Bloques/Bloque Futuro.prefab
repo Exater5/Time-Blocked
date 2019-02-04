@@ -137,7 +137,7 @@ MonoBehaviour:
   - {fileID: 6255891459249308583, guid: 813263b90028d294e8972503abe64e81, type: 3}
   sobreProbabilidad: La probabilidad es entre 8, es decir, el valor 8 es 100% y 80
     es 10%
-  probabilidad: 40
+  numeroMaximo: 18
 --- !u!82 &8005007222239952678
 AudioSource:
   m_ObjectHideFlags: 0
@@ -157,7 +157,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 0
+  Priority: 128
   DopplerLevel: 1
   MinDistance: 18.355436
   MaxDistance: 500

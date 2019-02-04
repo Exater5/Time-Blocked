@@ -16,10 +16,10 @@ public class BloqueFuturo : MonoBehaviour
     [TextArea]
     public string sobreProbabilidad = "La probabilidad es entre 8, es decir, el valor 8 es 100% y 80 es 10%";
     [Range(8f, 100f)]
-    public float probabilidad;
+    public float numeroMaximo;
     private void Start()
     {
-        numeroAleatorio = Mathf.Round(Random.Range(1f, probabilidad));
+        numeroAleatorio = Mathf.Round(Random.Range(1f, numeroMaximo));
         sr = GetComponent<SpriteRenderer>();
         sonidoRotura = GetComponent<AudioSource>();
     }
@@ -29,10 +29,10 @@ public class BloqueFuturo : MonoBehaviour
         if (vidas <= 0)
         {
             int numeroRounded = (int)numeroAleatorio;
-            if (numeroAleatorio <= 8)
+            if (numeroRounded <= 8)
             {
-                Debug.Log(numeroAleatorio);
-                mejora = powerUps[powerUps.Count +1 - numeroRounded];
+                Debug.Log(numeroRounded);
+                mejora = powerUps[numeroRounded];
                 Instantiate(mejora, transform.position, transform.rotation);
                 Destroy(gameObject);
                 
@@ -59,6 +59,7 @@ public class BloqueFuturo : MonoBehaviour
         if (col.gameObject.CompareTag("Bola") && destruible == true)
         {
             --vidas;
+            sonidoRotura.Play();
 
             if (vidas == 1)
             {
@@ -66,6 +67,10 @@ public class BloqueFuturo : MonoBehaviour
             }
         }
     }
+
+
+  
+
 
     private void OnTriggerEnter2D(Collider2D col)
     {
