@@ -59,6 +59,7 @@ public class BloqueFuturo : MonoBehaviour
         if (col.gameObject.CompareTag("Bola") && destruible == true)
         {
             --vidas;
+            sonidoRotura.Play();
 
             if (vidas == 1)
             {
@@ -66,6 +67,10 @@ public class BloqueFuturo : MonoBehaviour
             }
         }
     }
+
+
+  
+
 
     private void OnTriggerEnter2D(Collider2D col)
     {

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BloquePrehistoria : MonoBehaviour
 {
+    AudioSource sonidoRotura;
     public int vidas;
     public GameObject particulas;
     public bool destruible = false;
@@ -21,12 +22,14 @@ public class BloquePrehistoria : MonoBehaviour
     {
         numeroAleatorio = Mathf.Round(Random.Range(1f, probabilidad));
         sr = GetComponent<SpriteRenderer>();
+        sonidoRotura = GetComponent<AudioSource>();
     }
 
     void Update()
     {
         if (vidas <= 0)
         {
+            sonidoRotura.Play();
             int numeroFix = (int)numeroAleatorio;
             if (numeroAleatorio <= 8)
             {
@@ -53,6 +56,7 @@ public class BloquePrehistoria : MonoBehaviour
         if (col.gameObject.CompareTag("Bola") && destruible == true)
         {
             --vidas;
+            sonidoRotura.Play();
             if (vidas == 1)
             {
                 CambiaSprite();
@@ -72,6 +76,7 @@ public class BloquePrehistoria : MonoBehaviour
         if (col.gameObject.CompareTag("Bola") && destruible == true)
         {
             --vidas;
+            sonidoRotura.Play();
             if (vidas == 1)
             {
                 CambiaSprite();
