@@ -121,6 +121,8 @@ public class GameController : MonoBehaviour
     public void CargaMenu()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 0f;
+        MaquinaTiempo.prehistoria = false;
     }
     public void CargaNivel()
     {

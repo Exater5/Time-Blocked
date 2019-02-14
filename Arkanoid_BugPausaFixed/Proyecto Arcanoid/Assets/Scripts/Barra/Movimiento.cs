@@ -8,7 +8,7 @@ public class Movimiento : MonoBehaviour {
     public static float bordeDerecho = 4.5f;
     public static bool lanza = false;
     //Variables Bola
-    public static float velocidadSalida = 500f;
+    public static float velocidadSalida = 350f;
     public GameObject bola;
     public static Rigidbody2D rbBola;
     public static bool enPartida;
