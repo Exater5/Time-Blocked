@@ -6,8 +6,7 @@ public class Movimiento : MonoBehaviour {
     //Variables Movimiento
     public static float bordeIzquierdo = -4.5f;
     public static float bordeDerecho = 4.5f;
-    Vector2 posicionRaton;
-    bool lanza = false;
+    public static bool lanza = false;
     //Variables Bola
     public static float velocidadSalida = 500f;
     public GameObject bola;
@@ -44,11 +43,9 @@ public class Movimiento : MonoBehaviour {
             lanza = false;
 
         }
-        //Movimiento
-        
-        posicionRaton.y = transform.position.y;
-        transform.position = posicionRaton;
 
+        //Límites:
+        
         if (transform.position.x < bordeIzquierdo)
         {
             transform.position = new Vector2(bordeIzquierdo, transform.position.y);
@@ -69,19 +66,8 @@ public class Movimiento : MonoBehaviour {
         {
             ReiniciaBola.lanza = true;
         }
+        Debug.Log("Pincho");
+    }
 
-    }
-    private void OnMouseEnter()
-    {
-        if(Input.touchCount == 2)
-        {
-            lanza = true;
 
-        }
-       
-    }
-    private void OnMouseOver()
-    {
-        posicionRaton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    }
 }
