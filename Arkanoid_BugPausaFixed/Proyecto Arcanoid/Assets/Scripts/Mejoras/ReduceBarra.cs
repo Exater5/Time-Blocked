@@ -8,6 +8,7 @@ public class ReduceBarra : MonoBehaviour {
     SpriteRenderer sr;
     public float duracion = 10f;
     int contadorColisiones = 0;
+    public static bool reducido = false;
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -18,13 +19,14 @@ public class ReduceBarra : MonoBehaviour {
         {
             ++contadorColisiones;
             jugador = col.gameObject;
-            if(contadorColisiones == 1)
+            if(contadorColisiones == 1 && reducido == false)
             {
                 col.gameObject.transform.localScale -= new Vector3(magnitud, 0, 0);
                 Invoke("Crece", duracion);
                 sr.enabled = false;
                 Movimiento.bordeDerecho = Movimiento.bordeDerecho + 0.7f;
                 Movimiento.bordeIzquierdo = Movimiento.bordeIzquierdo - 0.7f;
+                reducido = true;
             }
  
         }
@@ -37,5 +39,6 @@ public class ReduceBarra : MonoBehaviour {
         Movimiento.bordeDerecho = Movimiento.bordeDerecho - 0.7f;
         Movimiento.bordeIzquierdo = Movimiento.bordeIzquierdo + 0.7f;
         Destroy(gameObject);
+        reducido = false;
     }
 }
