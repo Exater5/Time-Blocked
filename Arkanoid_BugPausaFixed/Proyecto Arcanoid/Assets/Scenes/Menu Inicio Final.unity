@@ -1010,6 +1010,7 @@ GameObject:
   - component: {fileID: 810895378}
   - component: {fileID: 810895377}
   - component: {fileID: 810895379}
+  - component: {fileID: 810895380}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -1074,6 +1075,24 @@ MonoBehaviour:
   imagenFx: {fileID: 326246737}
   activada: 1
   fxActivada: 1
+--- !u!114 &810895380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810895376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4250e3217a42b43badedaca8b41026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nivelesDesbloqueados: 0
+  mundo1: {fileID: 37440772}
+  mundo2: {fileID: 2041534225}
+  mundo3: {fileID: 854013357}
+  mundo4: {fileID: 1761872724}
+  mundo5: {fileID: 1533603616}
 --- !u!1 &854013355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,7 +1166,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 854013358}
   m_OnClick:
     m_PersistentCalls:
@@ -1371,7 +1390,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1533603617}
   m_OnClick:
     m_PersistentCalls:
@@ -1677,7 +1696,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1761872725}
   m_OnClick:
     m_PersistentCalls:
@@ -2404,7 +2423,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2041534226}
   m_OnClick:
     m_PersistentCalls:

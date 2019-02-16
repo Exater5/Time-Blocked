@@ -12,6 +12,7 @@ public class CuentaBloques : MonoBehaviour
     public Text textoFinal;
     public GameObject todosLosObjetos;
     public Button botonSigNivel;
+    GuardaProgreso scriptGuardar;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class CuentaBloques : MonoBehaviour
         if(transform.childCount <= 0 && jugando == true)
         {
             TerminaPartida();
+            scriptGuardar.SumaNivel();
             jugando = false;
             Destroy(todosLosObjetos);
         }
