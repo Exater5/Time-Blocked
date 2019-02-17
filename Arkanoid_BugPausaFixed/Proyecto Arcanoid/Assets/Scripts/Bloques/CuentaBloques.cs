@@ -12,7 +12,7 @@ public class CuentaBloques : MonoBehaviour
     public Text textoFinal;
     public GameObject todosLosObjetos;
     public Button botonSigNivel;
-    GuardaProgreso scriptGuardar;
+    public int numeroDeEscena;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,6 @@ public class CuentaBloques : MonoBehaviour
         if(transform.childCount <= 0 && jugando == true)
         {
             TerminaPartida();
-            scriptGuardar.SumaNivel();
             jugando = false;
             Destroy(todosLosObjetos);
         }
@@ -35,6 +34,8 @@ public class CuentaBloques : MonoBehaviour
     void TerminaPartida()
     {
         textoFinal.text = ("Bieeen, has tardado " + Mathf.Round(tiempo) + " segundos en superar el mapa");
+        GuardaProgreso.SumaNivel();
+        Debug.Log("He sumado un nivel");
         animacionGanar.SetTrigger("pierdes");
         Time.timeScale = 0f;
         botonSigNivel.interactable = true;
