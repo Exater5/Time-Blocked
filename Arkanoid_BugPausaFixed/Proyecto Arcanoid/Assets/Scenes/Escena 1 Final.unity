@@ -676,13 +676,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 000f70ca642407f40a37404026b46b68, type: 2}
-  spriteMusicaActivada: {fileID: 21300000, guid: 728ae8dc678973247a87b79fc1dafc58,
+  spriteMusicaActivada: {fileID: 21300000, guid: b7a8f3aee0a152240b201853814c0987,
     type: 3}
-  spriteMusicaDesactivada: {fileID: 21300000, guid: b7a8f3aee0a152240b201853814c0987,
+  spriteMusicaDesactivada: {fileID: 21300000, guid: 728ae8dc678973247a87b79fc1dafc58,
     type: 3}
   imagenMusica: {fileID: 1606216300}
-  spriteFxActivada: {fileID: 21300000, guid: cbfefde95f45a9241b25b980e4427b22, type: 3}
-  spriteFxDesactivada: {fileID: 21300000, guid: acf4ec96027d6664291054b382c80863,
+  spriteFxActivada: {fileID: 21300000, guid: acf4ec96027d6664291054b382c80863, type: 3}
+  spriteFxDesactivada: {fileID: 21300000, guid: cbfefde95f45a9241b25b980e4427b22,
     type: 3}
   imagenFx: {fileID: 956387172}
   activada: 1
@@ -2824,7 +2824,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: cbfefde95f45a9241b25b980e4427b22, type: 3}
+  m_Sprite: {fileID: 21300000, guid: acf4ec96027d6664291054b382c80863, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5321,7 +5321,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 728ae8dc678973247a87b79fc1dafc58, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b7a8f3aee0a152240b201853814c0987, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5892,16 +5892,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
-    - target: {fileID: 8005007222239952678, guid: 781ec53b8ac64d341aefd62dc5a2e050,
-        type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
         type: 3}
       propertyPath: sonidoRotura
       value: 
       objectReference: {fileID: 196487758}
+    - target: {fileID: 8005007222239952678, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &1726164795
@@ -7391,16 +7391,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8005007222239952678, guid: 781ec53b8ac64d341aefd62dc5a2e050,
-        type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
         type: 3}
       propertyPath: sonidoRotura
       value: 
       objectReference: {fileID: 196487758}
+    - target: {fileID: 8005007222239952678, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &2067173273

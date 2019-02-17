@@ -764,15 +764,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 000f70ca642407f40a37404026b46b68, type: 2}
-  spriteMusicaActivada: {fileID: 21300000, guid: 728ae8dc678973247a87b79fc1dafc58,
+  spriteMusicaActivada: {fileID: 21300000, guid: b7a8f3aee0a152240b201853814c0987,
     type: 3}
-  spriteMusicaDesactivada: {fileID: 21300000, guid: b7a8f3aee0a152240b201853814c0987,
+  spriteMusicaDesactivada: {fileID: 21300000, guid: 728ae8dc678973247a87b79fc1dafc58,
     type: 3}
-  imagenMusica: {fileID: 0}
-  spriteFxActivada: {fileID: 21300000, guid: cbfefde95f45a9241b25b980e4427b22, type: 3}
-  spriteFxDesactivada: {fileID: 21300000, guid: acf4ec96027d6664291054b382c80863,
+  imagenMusica: {fileID: 1188405448}
+  spriteFxActivada: {fileID: 21300000, guid: acf4ec96027d6664291054b382c80863, type: 3}
+  spriteFxDesactivada: {fileID: 21300000, guid: cbfefde95f45a9241b25b980e4427b22,
     type: 3}
-  imagenFx: {fileID: 0}
+  imagenFx: {fileID: 1816744099}
   activada: 1
   fxActivada: 1
 --- !u!82 &196487757
@@ -4332,7 +4332,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 196487756}
         m_MethodName: BotonMusica
         m_Mode: 1
         m_Arguments:
@@ -4365,7 +4365,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 728ae8dc678973247a87b79fc1dafc58, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b7a8f3aee0a152240b201853814c0987, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6257,7 +6257,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 196487756}
         m_MethodName: BotonFx
         m_Mode: 1
         m_Arguments:
@@ -6290,7 +6290,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: cbfefde95f45a9241b25b980e4427b22, type: 3}
+  m_Sprite: {fileID: 21300000, guid: acf4ec96027d6664291054b382c80863, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
