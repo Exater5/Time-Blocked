@@ -45,6 +45,7 @@ public class BloqueFuturo : MonoBehaviour
 
         }
 
+
     }
     private void OnCollisionEnter2D(Collision2D col)
     {
@@ -60,7 +61,6 @@ public class BloqueFuturo : MonoBehaviour
         {
             --vidas;
             sonidoRotura.Play();
-
             if (vidas == 1)
             {
                 CambiaSprite();
@@ -69,7 +69,7 @@ public class BloqueFuturo : MonoBehaviour
     }
 
 
-  
+
 
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -92,7 +92,8 @@ public class BloqueFuturo : MonoBehaviour
             }
         }
     }
-    void CambiaSprite()
+
+    public void CambiaSprite()
     {
         sr.sprite = sprite1vida;
     }

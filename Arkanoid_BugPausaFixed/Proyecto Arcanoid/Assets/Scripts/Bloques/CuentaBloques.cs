@@ -12,7 +12,7 @@ public class CuentaBloques : MonoBehaviour
     public Text textoFinal;
     public GameObject todosLosObjetos;
     public Button botonSigNivel;
-    public int numeroDeEscena;
+    public int numeroDeMundo;
     // Start is called before the first frame update
     void Start()
     {

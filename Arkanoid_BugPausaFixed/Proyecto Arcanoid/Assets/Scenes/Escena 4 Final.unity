@@ -6574,6 +6574,7 @@ MonoBehaviour:
   textoFinal: {fileID: 1729510138}
   todosLosObjetos: {fileID: 596850026}
   botonSigNivel: {fileID: 229185241}
+  numeroDeMundo: 4
 --- !u!4 &1871956035
 Transform:
   m_ObjectHideFlags: 0

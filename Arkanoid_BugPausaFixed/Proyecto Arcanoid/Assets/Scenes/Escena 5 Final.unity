@@ -179,16 +179,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6981029368719775786, guid: ef91f2d5a8c586b408bb227b2ac72abe,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6981029368719775785, guid: ef91f2d5a8c586b408bb227b2ac72abe,
         type: 3}
       propertyPath: trBarra
       value: 
       objectReference: {fileID: 1909229739}
+    - target: {fileID: 6981029368719775786, guid: ef91f2d5a8c586b408bb227b2ac72abe,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef91f2d5a8c586b408bb227b2ac72abe, type: 3}
 --- !u!4 &9757279 stripped
@@ -7804,6 +7804,7 @@ MonoBehaviour:
   textoFinal: {fileID: 1729510138}
   todosLosObjetos: {fileID: 596850026}
   botonSigNivel: {fileID: 229185241}
+  numeroDeMundo: 5
 --- !u!4 &1871956035
 Transform:
   m_ObjectHideFlags: 0
