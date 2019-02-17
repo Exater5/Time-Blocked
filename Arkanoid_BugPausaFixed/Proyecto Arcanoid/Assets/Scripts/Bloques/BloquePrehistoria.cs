@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BloquePrehistoria : MonoBehaviour
 {
-    AudioSource sonidoRotura;
+    public AudioSource sonidoRotura;
     public int vidas;
     public GameObject particulas;
     public bool destruible = false;
@@ -21,8 +21,7 @@ public class BloquePrehistoria : MonoBehaviour
     private void Start()
     {
         numeroAleatorio = Mathf.Round(Random.Range(1f, probabilidad));
-        sr = GetComponent<SpriteRenderer>();
-        sonidoRotura = GetComponent<AudioSource>();
+        sr = GetComponent<SpriteRenderer>();       
     }
 
     void Update()

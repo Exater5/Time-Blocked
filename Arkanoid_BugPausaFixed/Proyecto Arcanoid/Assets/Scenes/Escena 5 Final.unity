@@ -279,6 +279,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1001 &17811845
@@ -363,6 +368,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09ba3f176ec1ff499649c7cc5f9a18a, type: 3}
 --- !u!1001 &28275229
@@ -447,6 +457,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!4 &96805642 stripped
@@ -537,6 +552,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6141181775185124986, guid: 53fff815d6f340d4a9c71447a932f82c,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53fff815d6f340d4a9c71447a932f82c, type: 3}
 --- !u!1 &153263849
@@ -781,6 +801,7 @@ GameObject:
   - component: {fileID: 196487754}
   - component: {fileID: 196487755}
   - component: {fileID: 196487756}
+  - component: {fileID: 196487757}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -872,6 +893,103 @@ MonoBehaviour:
   imagenFx: {fileID: 0}
   activada: 1
   fxActivada: 1
+--- !u!82 &196487757
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196487752}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243621303578021352, guid: 000f70ca642407f40a37404026b46b68,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 6bf0155246e86ab4ea9fcf9ee98a04d8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &210835528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -954,6 +1072,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &222653722
@@ -1315,6 +1438,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!4 &296290457 stripped
@@ -1505,6 +1633,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6141181775185124986, guid: 2d2a10a893995864680eb6c34b1efdbe,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d2a10a893995864680eb6c34b1efdbe, type: 3}
 --- !u!4 &327926600 stripped
@@ -1625,6 +1758,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &370596361
@@ -1799,6 +1937,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6141181775185124986, guid: 2d2a10a893995864680eb6c34b1efdbe,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d2a10a893995864680eb6c34b1efdbe, type: 3}
 --- !u!4 &407538644 stripped
@@ -2093,6 +2236,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!4 &588686613 stripped
@@ -2221,6 +2369,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6141181775185124986, guid: 53fff815d6f340d4a9c71447a932f82c,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53fff815d6f340d4a9c71447a932f82c, type: 3}
 --- !u!1 &643965586
@@ -2411,6 +2564,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &676991978 stripped
@@ -2540,6 +2698,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!4 &714617852 stripped
@@ -2693,6 +2856,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &799045629
@@ -2840,6 +3008,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!4 &817799019 stripped
@@ -2942,6 +3115,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6141181775185124986, guid: 2d2a10a893995864680eb6c34b1efdbe,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d2a10a893995864680eb6c34b1efdbe, type: 3}
 --- !u!4 &862641812 stripped
@@ -3211,6 +3389,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!4 &912250083 stripped
@@ -3429,6 +3612,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09ba3f176ec1ff499649c7cc5f9a18a, type: 3}
 --- !u!1 &998496873
@@ -3587,6 +3775,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6141181775185124986, guid: 2d2a10a893995864680eb6c34b1efdbe,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d2a10a893995864680eb6c34b1efdbe, type: 3}
 --- !u!1 &1022390588
@@ -3769,6 +3962,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1001 &1030870427
@@ -3853,6 +4051,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &1047876661
@@ -4065,6 +4268,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!4 &1067409905 stripped
@@ -4390,6 +4598,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09ba3f176ec1ff499649c7cc5f9a18a, type: 3}
 --- !u!1 &1145380049
@@ -4608,6 +4821,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &1169750942 stripped
@@ -4771,6 +4989,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!4 &1201619632 stripped
@@ -4985,6 +5208,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1001 &1249872486
@@ -5069,6 +5297,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1001 &1266131872
@@ -5153,6 +5386,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09ba3f176ec1ff499649c7cc5f9a18a, type: 3}
 --- !u!1 &1276063444 stripped
@@ -5339,6 +5577,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6141181775185124986, guid: 53fff815d6f340d4a9c71447a932f82c,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53fff815d6f340d4a9c71447a932f82c, type: 3}
 --- !u!1001 &1342306908
@@ -5423,6 +5666,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1001 &1343404119
@@ -5507,6 +5755,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!4 &1359449086 stripped
@@ -5597,6 +5850,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1001 &1367406207
@@ -5681,6 +5939,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1001 &1372399067
@@ -5765,6 +6028,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1001 &1379673878
@@ -5849,6 +6117,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6141181775185124986, guid: 2d2a10a893995864680eb6c34b1efdbe,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d2a10a893995864680eb6c34b1efdbe, type: 3}
 --- !u!1001 &1393794102
@@ -5933,6 +6206,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &1399835645
@@ -6083,6 +6361,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09ba3f176ec1ff499649c7cc5f9a18a, type: 3}
 --- !u!4 &1400987981 stripped
@@ -6179,6 +6462,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1001 &1420568883
@@ -6263,6 +6551,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &1457503378 stripped
@@ -6392,6 +6685,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6141181775185124986, guid: 2d2a10a893995864680eb6c34b1efdbe,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d2a10a893995864680eb6c34b1efdbe, type: 3}
 --- !u!4 &1480904808 stripped
@@ -6494,6 +6792,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6141181775185124986, guid: 53fff815d6f340d4a9c71447a932f82c,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53fff815d6f340d4a9c71447a932f82c, type: 3}
 --- !u!4 &1516026052 stripped
@@ -6692,6 +6995,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &1706400597 stripped
@@ -7014,6 +7322,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &1795822673
@@ -7226,6 +7539,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09ba3f176ec1ff499649c7cc5f9a18a, type: 3}
 --- !u!1001 &1802938515
@@ -7310,6 +7628,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &1810109569
@@ -7683,6 +8006,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1001 &1869236156
@@ -7767,6 +8095,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09ba3f176ec1ff499649c7cc5f9a18a, type: 3}
 --- !u!1 &1871956033
@@ -7954,6 +8287,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &1879516976
@@ -8228,6 +8566,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1 &1973834765
@@ -8397,6 +8740,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: e09ba3f176ec1ff499649c7cc5f9a18a,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e09ba3f176ec1ff499649c7cc5f9a18a, type: 3}
 --- !u!1001 &2049562743
@@ -8481,6 +8829,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6141181775185124986, guid: 2d2a10a893995864680eb6c34b1efdbe,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d2a10a893995864680eb6c34b1efdbe, type: 3}
 --- !u!1 &2067173273
@@ -8719,6 +9072,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!4 &2090493140 stripped
@@ -9109,6 +9467,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.267
       objectReference: {fileID: 0}
+    - target: {fileID: 6946293998427639917, guid: 781ec53b8ac64d341aefd62dc5a2e050,
+        type: 3}
+      propertyPath: sonidoRotura
+      value: 
+      objectReference: {fileID: 196487757}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781ec53b8ac64d341aefd62dc5a2e050, type: 3}
 --- !u!1001 &39459432847306685

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BloqueFuturo : MonoBehaviour
 {
-    AudioSource sonidoRotura;
+    public AudioSource sonidoRotura;
     public int vidas;
     public GameObject particulas;
     public bool destruible = true;
@@ -21,7 +21,6 @@ public class BloqueFuturo : MonoBehaviour
     {
         numeroAleatorio = Mathf.Round(Random.Range(1f, numeroMaximo));
         sr = GetComponent<SpriteRenderer>();
-        sonidoRotura = GetComponent<AudioSource>();
     }
     void Update()
     {

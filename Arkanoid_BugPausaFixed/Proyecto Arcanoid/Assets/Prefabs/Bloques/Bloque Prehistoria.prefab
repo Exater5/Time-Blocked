@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb06cab7c88d5fa45977abf586ce7d09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoRotura: {fileID: 0}
   vidas: 1
   particulas: {fileID: 7442341063041785303, guid: 98453032e0db99e4391c365ef0983e6b,
     type: 3}
