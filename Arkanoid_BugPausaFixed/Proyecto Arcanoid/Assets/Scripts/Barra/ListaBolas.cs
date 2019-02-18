@@ -27,7 +27,7 @@ public class ListaBolas : MonoBehaviour
         bolas = new List<GameObject>(GameObject.FindGameObjectsWithTag("Bola"));
         numeroBolas = bolas.Count;
         textoVidas.text = vidas.ToString();
-        
+
         if (vidas <= 0)
         {
             textoVidas.text = "GAME OVER";          

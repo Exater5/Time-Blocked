@@ -19,9 +19,10 @@ public class IgnoraColisiones : MonoBehaviour
     void Update()
     {
         bolas = GameObject.FindGameObjectsWithTag("Bola");
+        numeroBolas = bolas.Length;
         for (int i = 1; i < numeroBolas; ++i)
         {
-           
+            Debug.Log(i);
         }
         numeroBolas = bolas.Length;
     }

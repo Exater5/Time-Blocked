@@ -12,11 +12,6 @@ public class TresBolas : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Player"))
@@ -30,7 +25,20 @@ public class TresBolas : MonoBehaviour
             bola2 = Instantiate(bola, ScriptBola.trBola.position - new Vector3(0.5f, 0, 0), ScriptBola.trBola.rotation);
             bola2.GetComponent<Rigidbody2D>().velocity = bola.GetComponent<Rigidbody2D>().velocity - new Vector2(10f, 10f);
 
+            IgnoraColisiones(bola1);
+            IgnoraColisiones(bola2);
+
             Destroy(gameObject);
         }
+    }
+
+    private void IgnoraColisiones(GameObject bola)
+    {
+        GameObject[] bolas = GameObject.FindGameObjectsWithTag("Bola");
+
+        for (int i = 0; i < bolas.Length; i++) {
+            Physics2D.IgnoreCollision(bola.GetComponent<Collider2D>(), bolas[i].GetComponent<Collider2D>());
+        }
+
     }
 }

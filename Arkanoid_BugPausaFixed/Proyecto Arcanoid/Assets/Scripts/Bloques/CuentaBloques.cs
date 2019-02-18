@@ -34,7 +34,11 @@ public class CuentaBloques : MonoBehaviour
     void TerminaPartida()
     {
         textoFinal.text = ("Bieeen, has tardado " + Mathf.Round(tiempo) + " segundos en superar el mapa");
-        GuardaProgreso.SumaNivel();
+        if (numeroDeMundo > PlayerPrefs.GetInt("Niveles"))
+        {
+            GuardaProgreso.SumaNivel();
+        }
+       
         Debug.Log("He sumado un nivel");
         animacionGanar.SetTrigger("pierdes");
         Time.timeScale = 0f;

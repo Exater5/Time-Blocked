@@ -14,7 +14,7 @@ public class Movimiento : MonoBehaviour {
     public static bool enPartida;
     GameObject nuevaBola;
     public static bool respawn = true;
-    int cuentaToques = 0;
+
     // Use this for initialization
     void Start ()
     {      
@@ -31,6 +31,7 @@ public class Movimiento : MonoBehaviour {
                 nuevaBola = Instantiate(bola, transform.position + new Vector3(0, 1, 0), transform.rotation);
                 rbBola = nuevaBola.GetComponent<Rigidbody2D>();
                 respawn = false;
+              
             }
             nuevaBola.transform.position = transform.position + new Vector3(0, 1, 0);
             Time.timeScale = 0f;

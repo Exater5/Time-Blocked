@@ -14,12 +14,7 @@ public class GuardaProgreso : MonoBehaviour
     {
         PlayerPrefs.GetInt("Niveles");
         Debug.Log(PlayerPrefs.GetInt("Niveles").ToString());
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
- 
         if (PlayerPrefs.GetInt("Niveles") >= 1)
         {
             mundo2.interactable = true;
@@ -36,6 +31,13 @@ public class GuardaProgreso : MonoBehaviour
         {
             mundo5.interactable = true;
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+ 
+
         
     }
     public static void SumaNivel()
