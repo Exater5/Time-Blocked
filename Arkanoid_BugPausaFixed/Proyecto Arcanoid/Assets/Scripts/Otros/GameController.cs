@@ -128,26 +128,31 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         ListaBolas.vidas = 3;
+        MaquinaTiempo.prehistoria = false;
     }
     public void CargaNivel2()
     {
         SceneManager.LoadScene(2);
         ListaBolas.vidas = 3;
+        MaquinaTiempo.prehistoria = false;
     }
     public void CargaNivel3()
     {
         SceneManager.LoadScene(3);
         ListaBolas.vidas = 3;
+        MaquinaTiempo.prehistoria = false;
     }
     public void CargaNivel4()
     {
         SceneManager.LoadScene(4);
         ListaBolas.vidas = 3;
+        MaquinaTiempo.prehistoria = false;
     }
     public void CargaNivel5()
     {
         SceneManager.LoadScene(5);
         ListaBolas.vidas = 3;
+        MaquinaTiempo.prehistoria = false;
     }
     public void CargaCreditos()
     {
