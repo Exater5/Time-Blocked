@@ -29,7 +29,7 @@ public class MaquinaTiempo : MonoBehaviour
     public Text textoPersiana;
     public Animator animacionFondos;
     public Animator RelojS2;
-
+    public Animator warning;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +60,15 @@ public class MaquinaTiempo : MonoBehaviour
         {
             GameOver();
 
+        }
+
+        if(tiempoFixed < 5 && prehistoria == true)
+        {
+            warning.SetBool("Peligro", true);
+        }
+        else
+        {
+            warning.SetBool("Peligro", false);
         }
     }
     public void ViajeTemporal()
