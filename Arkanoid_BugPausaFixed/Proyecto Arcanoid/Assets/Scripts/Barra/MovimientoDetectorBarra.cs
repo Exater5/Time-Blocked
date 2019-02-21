@@ -16,8 +16,10 @@ public class MovimientoDetectorBarra : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         posicionRaton.y = trBarra.position.y;
         trBarra.position = Vector2.MoveTowards(trBarra.position, posicionRaton, dureza);
+       
     }
     private void OnMouseOver()
     {

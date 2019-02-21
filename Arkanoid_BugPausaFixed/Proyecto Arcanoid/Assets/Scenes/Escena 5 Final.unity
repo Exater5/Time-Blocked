@@ -137,7 +137,7 @@ PrefabInstance:
     - target: {fileID: 6981029368719775784, guid: ef91f2d5a8c586b408bb227b2ac72abe,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.067933306
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6981029368719775784, guid: ef91f2d5a8c586b408bb227b2ac72abe,
         type: 3}
@@ -184,11 +184,6 @@ PrefabInstance:
       propertyPath: trBarra
       value: 
       objectReference: {fileID: 1909229739}
-    - target: {fileID: 6981029368719775786, guid: ef91f2d5a8c586b408bb227b2ac72abe,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef91f2d5a8c586b408bb227b2ac72abe, type: 3}
 --- !u!4 &9757279 stripped

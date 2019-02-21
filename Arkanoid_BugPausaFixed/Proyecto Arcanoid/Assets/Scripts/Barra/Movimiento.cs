@@ -14,20 +14,23 @@ public class Movimiento : MonoBehaviour {
     public static bool enPartida;
     GameObject nuevaBola;
     public static bool respawn = true;
-
+    public static float profundidad = 1f;
     // Use this for initialization
     void Start ()
-    {      
-        
+    {
+
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
+
         if (!enPartida)
         {
+            transform.position = transform.position - new Vector3(0, 0, +profundidad);
             if (respawn == true)
             {
+                transform.position = transform.position - new Vector3(0, 0, -1f);
                 nuevaBola = Instantiate(bola, transform.position + new Vector3(0, 1, 0), transform.rotation);
                 rbBola = nuevaBola.GetComponent<Rigidbody2D>();
                 respawn = false;
@@ -36,17 +39,20 @@ public class Movimiento : MonoBehaviour {
             nuevaBola.transform.position = transform.position + new Vector3(0, 1, 0);
             Time.timeScale = 0f;
         }
+        else
+        {
+            transform.position = transform.position - new Vector3(0, 0, -profundidad);
+        }
         if (lanza == true &&!enPartida)
         {
             enPartida = true;
             Time.timeScale = 1f;
             rbBola.AddForce(Vector2.up * velocidadSalida);
             lanza = false;
-
         }
 
         //Límites:
-        
+
         if (transform.position.x < bordeIzquierdo)
         {
             transform.position = new Vector2(bordeIzquierdo, transform.position.y);

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 934281823547376056}
   - component: {fileID: 934281823547376062}
   - component: {fileID: 934281823547376057}
-  - component: {fileID: 934281823547376061}
+  - component: {fileID: 1806097964}
   m_Layer: 0
   m_Name: Barra
   m_TagString: Player
@@ -128,7 +128,7 @@ PolygonCollider2D:
       - {x: 2.9429028, y: -0.09574619}
       - {x: 1.975118, y: 0.15919241}
       - {x: 0.44697914, y: 0.3148547}
---- !u!61 &934281823547376061
+--- !u!61 &1806097964
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,7 +141,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.09675264, y: 1.3491411}
+  m_Offset: {x: 0.091593266, y: -0.00000059604645}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -152,5 +152,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.381097, y: 5.452198}
+  m_Size: {x: 6.704178, y: 3.5750496}
   m_EdgeRadius: 0

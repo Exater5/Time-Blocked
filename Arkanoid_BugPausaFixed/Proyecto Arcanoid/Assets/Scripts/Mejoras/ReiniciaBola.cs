@@ -21,11 +21,19 @@ public class ReiniciaBola : MonoBehaviour
          if(activo == true)
          {
             ScriptBola.trBola.position = Vector2.MoveTowards(ScriptBola.trBola.position, barra.transform.position + new Vector3(0, 1, 0), 15f * Time.deltaTime);
-         }
+            transform.position = transform.position + new Vector3(0, 0, -1f);
+            Movimiento.profundidad = -1;
+        }
+        else
+        {
+            transform.position = transform.position - new Vector3(0, 0, -1f);
+            Movimiento.profundidad = 1;
+        }
          
          if (lanza && activo==true)
          {
              activo = false;
+             Movimiento.profundidad = 1;
              lanza = false;
              Time.timeScale = 1f;
              Movimiento.rbBola.AddForce(Vector2.up * Movimiento.velocidadSalida);
