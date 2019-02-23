@@ -27,21 +27,16 @@ public class Movimiento : MonoBehaviour {
 
         if (!enPartida)
         {
-            transform.position = transform.position - new Vector3(0, 0, +profundidad);
+
             if (respawn == true)
             {
-                transform.position = transform.position - new Vector3(0, 0, -1f);
+
                 nuevaBola = Instantiate(bola, transform.position + new Vector3(0, 1, 0), transform.rotation);
                 rbBola = nuevaBola.GetComponent<Rigidbody2D>();
                 respawn = false;
-              
             }
             nuevaBola.transform.position = transform.position + new Vector3(0, 1, 0);
             Time.timeScale = 0f;
-        }
-        else
-        {
-            transform.position = transform.position - new Vector3(0, 0, -profundidad);
         }
         if (lanza == true &&!enPartida)
         {

@@ -96,7 +96,7 @@ public class MaquinaTiempo : MonoBehaviour
         temporizador.text = "Game Over";
         Time.timeScale = 0f;
         animGameOver.SetTrigger("pierdes");
-        textoPersiana.text = "Game Over";
+        textoPersiana.text = "Game Over, has pasado demasiado tiempo en el pasado";
         prehistoria = false;
     }
 }

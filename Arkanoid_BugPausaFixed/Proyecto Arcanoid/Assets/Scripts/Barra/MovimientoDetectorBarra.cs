@@ -7,10 +7,11 @@ public class MovimientoDetectorBarra : MonoBehaviour
     Vector2 posicionRaton;
     public Transform trBarra;
     public float dureza = 0.25f;
+    bool movido = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -19,6 +20,15 @@ public class MovimientoDetectorBarra : MonoBehaviour
 
         posicionRaton.y = trBarra.position.y;
         trBarra.position = Vector2.MoveTowards(trBarra.position, posicionRaton, dureza);
+
+        if(Movimiento.enPartida == false || ReiniciaBola.activo == true)
+        {
+            transform.position = new Vector3(0.8f, -5.5f, 1);
+        }
+        else
+        {
+            transform.position = new Vector3(0.8f, -5.5f, -1);
+        }
        
     }
     private void OnMouseOver()

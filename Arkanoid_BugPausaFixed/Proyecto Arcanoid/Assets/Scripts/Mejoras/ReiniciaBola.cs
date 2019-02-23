@@ -5,7 +5,7 @@ using UnityEngine;
 public class ReiniciaBola : MonoBehaviour
 {
     GameObject barra;
-    bool activo = false;
+    public static bool activo = false;
     SpriteRenderer sr;
     public static bool lanza = false;
     public static bool cogeMejora = false;
@@ -22,12 +22,12 @@ public class ReiniciaBola : MonoBehaviour
          {
             ScriptBola.trBola.position = Vector2.MoveTowards(ScriptBola.trBola.position, barra.transform.position + new Vector3(0, 1, 0), 15f * Time.deltaTime);
             transform.position = transform.position + new Vector3(0, 0, -1f);
-            Movimiento.profundidad = -1;
+
         }
         else
         {
             transform.position = transform.position - new Vector3(0, 0, -1f);
-            Movimiento.profundidad = 1;
+
         }
          
          if (lanza && activo==true)
