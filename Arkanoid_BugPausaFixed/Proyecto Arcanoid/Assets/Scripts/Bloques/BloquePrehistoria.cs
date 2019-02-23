@@ -29,16 +29,15 @@ public class BloquePrehistoria : MonoBehaviour
         if (vidas <= 0)
         {
             sonidoRotura.Play();
-            int numeroFix = (int)numeroAleatorio;
+            int numeroRounded = (int)numeroAleatorio;
             if (numeroAleatorio <= 8)
             {
-                mejora = powerUps[powerUps.Count +1 - numeroFix];
+                mejora = powerUps[numeroRounded];
                 Instantiate(mejora, transform.position, transform.rotation);
+                Destroy(gameObject);
             }
             Instantiate(particulas, transform.position, transform.rotation);
-
             Destroy(gameObject);
-
         }
 
     }

@@ -12,7 +12,8 @@ public class GameController : MonoBehaviour
 	public float tiempoAnimacion = 1.5f;
 	public string nombreNivel = "CargaNivel";
     bool activado = false;
-    bool pulso = false;
+    bool pauso = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,8 +63,8 @@ public class GameController : MonoBehaviour
     }
     public void Pausa()
     {
-        pulso = !pulso;
-        if (pulso == true)
+        pauso = !pauso;
+        if (pauso == true)
         {
             animPanelPausa.SetBool("Sales", true);
             Time.timeScale = 0f;

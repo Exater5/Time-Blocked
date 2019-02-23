@@ -30,19 +30,16 @@ public class BloqueFuturo : MonoBehaviour
             int numeroRounded = (int)numeroAleatorio;
             if (numeroRounded <= 8)
             {
-                Debug.Log(numeroRounded);
                 mejora = powerUps[numeroRounded];
                 Instantiate(mejora, transform.position, transform.rotation);
                 Destroy(gameObject);
                 
             }
             Instantiate(particulas, transform.position, transform.rotation);
-
-            
-
             Destroy(gameObject);
 
         }
+
 
 
     }
