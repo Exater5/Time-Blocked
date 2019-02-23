@@ -33,7 +33,7 @@ public class CuentaBloques : MonoBehaviour
     }
     void TerminaPartida()
     {
-        textoFinal.text = ("Bieeen, has tardado " + Mathf.Round(tiempo) + " segundos en superar el mapa");
+        textoFinal.text = ("Enhorabuena, has completado el Nivel " + (numeroDeMundo +1)  +" en " + Mathf.Round(tiempo) + " segundos");
         if (numeroDeMundo > PlayerPrefs.GetInt("Niveles"))
         {
             GuardaProgreso.SumaNivel();

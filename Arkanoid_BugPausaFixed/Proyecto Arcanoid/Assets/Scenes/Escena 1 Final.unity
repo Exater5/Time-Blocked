@@ -1925,9 +1925,9 @@ RectTransform:
   m_Children:
   - {fileID: 1916628185}
   - {fileID: 1810109570}
+  - {fileID: 48790537}
   - {fileID: 1109069247}
   - {fileID: 1586247247}
-  - {fileID: 48790537}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1986,7 +1986,7 @@ PrefabInstance:
     - target: {fileID: 4468259009911846363, guid: 800052558b068c94c92c001072df30e7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4468259009911846363, guid: 800052558b068c94c92c001072df30e7,
         type: 3}
@@ -3791,7 +3791,7 @@ RectTransform:
   - {fileID: 1606216298}
   - {fileID: 956387170}
   m_Father: {fileID: 528109494}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.98601}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5433,7 +5433,7 @@ RectTransform:
   - {fileID: 1047876662}
   - {fileID: 923016311}
   m_Father: {fileID: 528109494}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7133,7 +7133,7 @@ MonoBehaviour:
   textoFinal: {fileID: 1729510138}
   todosLosObjetos: {fileID: 596850026}
   botonSigNivel: {fileID: 229185241}
-  numeroDeMundo: 1
+  numeroDeMundo: 0
 --- !u!4 &1871956035
 Transform:
   m_ObjectHideFlags: 0
