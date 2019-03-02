@@ -6,19 +6,20 @@ public class CronometroAnimacion : MonoBehaviour
 
 {
 	Animator animacion;
-	public float tiempo;
 	public float segundosEspera=0f;
+    
+    private float tick;
     // Start is called before the first frame update
     void Start()
     {
         animacion = GetComponent<Animator>();
+        tick = Time.time + segundosEspera;
     }
 
     // Update is called once per frame
     void Update()
     {
-        tiempo = Time.time;
-        if(tiempo>=segundosEspera)
+        if (Time.time >= tick)
         {
         	animacion.SetTrigger("Cronometro");
         }
