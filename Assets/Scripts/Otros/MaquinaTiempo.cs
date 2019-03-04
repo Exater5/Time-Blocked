@@ -30,6 +30,10 @@ public class MaquinaTiempo : MonoBehaviour
     public Animator animacionFondos;
     public Animator RelojS2;
     public Animator warning;
+
+    //Musica 
+    public AudioSource musicaFuturo;
+    public AudioSource musicaPasado;
     // Start is called before the first frame update
     void Start()
     {
@@ -82,13 +86,17 @@ public class MaquinaTiempo : MonoBehaviour
         {
             srActualBarra.sprite = spritePBarra;
             animacionFondos.SetTrigger("ViajePasado");
-            RelojS2.SetTrigger("ViajeTemporal");
+            // RelojS2.SetTrigger("ViajeTemporal");
+            musicaPasado.Play();
+            musicaFuturo.Pause();
         }
         else
         {
             srActualBarra.sprite = spriteFBarra;
             animacionFondos.SetTrigger("ViajeFuturo");
-            RelojS2.SetTrigger("ViajeTemporal");
+            //  RelojS2.SetTrigger("ViajeTemporal");
+            musicaPasado.Pause();
+            musicaFuturo.Play();
         }
     }
     void GameOver()
