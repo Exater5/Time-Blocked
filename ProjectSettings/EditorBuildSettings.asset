@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: 3f12320f96c15b74a9a3d97d6c8a595a
+  - enabled: 1
+    path: Assets/Scenes/OCULTO.unity
+    guid: f8be653058ca71d47902db6f268b402b
   m_configObjects: {}

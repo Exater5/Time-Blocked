@@ -164,4 +164,8 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadScene(6);
     }
+    public void CargaNivelSecreto()
+    {
+        SceneManager.LoadScene(7);
+    }
 }
