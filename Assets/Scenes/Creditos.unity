@@ -671,9 +671,9 @@ MonoBehaviour:
   m_text: "Dise\xF1os Realizados por:\nCarlos Mart\xEDnez\nJes\xFAs P\xE9rez\nJavier
     Canales\nCarlos Camacho\n\nProgramaci\xF3n:\nPablo Torcuato\n\nSonido:\nMiguel
     \xC1ngel Pe\xF1a (Miwo)\n\nDise\xF1o de niveles:\nCarlos Camacho\n\nGesti\xF3n
-    de proyecto:\nJavier Canales\n\nAgradecimientos especiales a:\nJavier Izquierdo\nPedro
-    \nBraulio Mart\xEDnez\nFamilias y amigos abandonados por trabajar en el proyecto
-    y que a\xFAn nos quieren.\nEn colaboraci\xF3n con:\nESCAV.\n\n"
+    de proyecto:\nJavier Canales\n\nAgradecimientos especiales a:\nJavier Izquierdo
+    Vera\nPedro Mar\xEDn Ramos\nBraulio Mart\xEDnez Rosillo\nFamilias y amigos abandonados
+    por trabajar en el proyecto y que a\xFAn nos quieren.\nEn colaboraci\xF3n con:\nESCAV."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -742,12 +742,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: -832.0972}
   m_textInfo:
     textComponent: {fileID: 1324891834}
-    characterCount: 400
+    characterCount: 422
     spriteCount: 0
-    spaceCount: 62
-    wordCount: 55
+    spaceCount: 63
+    wordCount: 59
     linkCount: 0
-    lineCount: 28
+    lineCount: 27
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -1005,8 +1005,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -127, y: -246}
-  m_SizeDelta: {x: 30, y: 30}
+  m_AnchoredPosition: {x: -119.7, y: -250.7}
+  m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1866709318
 MonoBehaviour:

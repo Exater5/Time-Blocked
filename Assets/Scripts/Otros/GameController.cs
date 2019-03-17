@@ -121,47 +121,47 @@ public class GameController : MonoBehaviour
     //Funciones de carga de Escenas
     public void CargaMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         Time.timeScale = 0f;
         MaquinaTiempo.prehistoria = false;
     }
     public void CargaNivel()
-    {
-        SceneManager.LoadScene(1);
-        ListaBolas.vidas = 3;
-        MaquinaTiempo.prehistoria = false;
-        Movimiento.enPartida = false;
-    }
-    public void CargaNivel2()
     {
         SceneManager.LoadScene(2);
         ListaBolas.vidas = 3;
         MaquinaTiempo.prehistoria = false;
         Movimiento.enPartida = false;
     }
-    public void CargaNivel3()
+    public void CargaNivel2()
     {
         SceneManager.LoadScene(3);
         ListaBolas.vidas = 3;
         MaquinaTiempo.prehistoria = false;
         Movimiento.enPartida = false;
     }
-    public void CargaNivel4()
+    public void CargaNivel3()
     {
         SceneManager.LoadScene(4);
         ListaBolas.vidas = 3;
         MaquinaTiempo.prehistoria = false;
         Movimiento.enPartida = false;
     }
-    public void CargaNivel5()
+    public void CargaNivel4()
     {
         SceneManager.LoadScene(5);
         ListaBolas.vidas = 3;
         MaquinaTiempo.prehistoria = false;
         Movimiento.enPartida = false;
     }
-    public void CargaCreditos()
+    public void CargaNivel5()
     {
         SceneManager.LoadScene(6);
+        ListaBolas.vidas = 3;
+        MaquinaTiempo.prehistoria = false;
+        Movimiento.enPartida = false;
+    }
+    public void CargaCreditos()
+    {
+        SceneManager.LoadScene(7);
     }
 }
