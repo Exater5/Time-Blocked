@@ -20,7 +20,7 @@ public class IntroNivel : MonoBehaviour
     }
 
     void PasaEscena() {
-        PlayerPrefs.SetFloat("FirstTime", 1);
+        PlayerPrefs.SetInt("FirstTime", 1);
         PlayerPrefs.Save();
         SceneManager.LoadScene(1);
     }
