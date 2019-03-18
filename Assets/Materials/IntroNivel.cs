@@ -8,20 +8,20 @@ public class IntroNivel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("PasaEscena", 14f);
+        if (PlayerPrefs.GetInt("FirstTime") == 1)
+            PasaEscena();
+        else
+            Invoke("PasaEscena", 24f);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     private void OnMouseDown()
     {
-        PasaEscena();
+        //PasaEscena();
     }
-    void PasaEscena()
-    {
+
+    void PasaEscena() {
+        PlayerPrefs.SetFloat("FirstTime", 1);
+        PlayerPrefs.Save();
         SceneManager.LoadScene(1);
     }
 }
