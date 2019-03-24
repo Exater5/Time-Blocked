@@ -15,6 +15,8 @@ public class ListaBolas : MonoBehaviour
     public Text textoVidas;
     public Text textoPersiana;
     public Animator animaPersiana;
+
+    public AudioSource sonidoDerrota;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,7 @@ public class ListaBolas : MonoBehaviour
 
         if (vidas <= 0)
         {
+            sonidoDerrota.Play();
             textoVidas.text = "GAME OVER";          
             Time.timeScale = 0f;
             textoPersiana.text = "GAME OVER, te has quedado sin bolas";

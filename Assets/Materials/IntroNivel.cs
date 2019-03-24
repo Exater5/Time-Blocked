@@ -8,7 +8,7 @@ public class IntroNivel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("PasaEscena", 14f);
+        Invoke("PasaEscena", 25f);
     }
 
     // Update is called once per frame

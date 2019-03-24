@@ -522,7 +522,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eb7cba6320832154fa5f8ed13e42f6a7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a409d6a79492fd0439f65a8dd915fbc5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -669,7 +669,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Dise\xF1os Realizados por:\nCarlos Mart\xEDnez\nJes\xFAs P\xE9rez\nJavier
-    Canales\nCarlos Camacho\n\nProgramaci\xF3n:\nPablo Torcuato\n\nSonido:\nMiguel
+    Canales\nCarlos Camacho\n\nProgramaci\xF3n:\nPablo Torcuato\n\nM\xFAsica y FX:\nMiguel
     \xC1ngel Pe\xF1a (Miwo)\n\nDise\xF1o de niveles:\nCarlos Camacho\n\nGesti\xF3n
     de proyecto:\nJavier Canales\n\nAgradecimientos especiales a:\nJavier Izquierdo
     Vera\nPedro Mar\xEDn Ramos\nBraulio Mart\xEDnez Rosillo\nFamilias y amigos abandonados
@@ -742,10 +742,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: -832.0972}
   m_textInfo:
     textComponent: {fileID: 1324891834}
-    characterCount: 422
+    characterCount: 427
     spriteCount: 0
-    spaceCount: 63
-    wordCount: 59
+    spaceCount: 65
+    wordCount: 61
     linkCount: 0
     lineCount: 27
     pageCount: 1
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a39c2e8f97bfd2c4daf34bf655ab16d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadDeEscritura: 0.05
+  velocidadDeEscritura: 0.04
 --- !u!222 &1324891836
 CanvasRenderer:
   m_ObjectHideFlags: 0

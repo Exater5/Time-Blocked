@@ -13,6 +13,7 @@ public class CuentaBloques : MonoBehaviour
     public GameObject todosLosObjetos;
     public Button botonSigNivel;
     public int numeroDeMundo;
+    public AudioSource sonidoVictoria;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,7 @@ public class CuentaBloques : MonoBehaviour
     }
     void TerminaPartida()
     {
+        sonidoVictoria.Play();
         textoFinal.text = ("Enhorabuena, has completado el Nivel " + (numeroDeMundo +1)  +" en " + Mathf.Round(tiempo) + " segundos");
         if (numeroDeMundo > PlayerPrefs.GetInt("Niveles"))
         {
